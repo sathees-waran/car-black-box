@@ -214,7 +214,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;uart.c: 7:     SPEN = 1;
 [e = _SPEN -> -> 1 `i `b ]
 "10
-[; ;uart.c: 10:     SPBRG = (20000000 / (16 * baud)) - 1;
+[; ;uart.c: 10:     SPBRG = (unsigned char)((20000000 / (16 * baud)) - 1);
 [e = _SPBRG -> - / -> -> 20000000 `l `ul * -> -> -> 16 `i `l `ul _baud -> -> -> 1 `i `l `ul `uc ]
 "13
 [; ;uart.c: 13:     TXSTA = 0x24;

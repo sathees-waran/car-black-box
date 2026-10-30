@@ -56,7 +56,8 @@
 #include "timers.h"
 
 
-unsigned char clock_reg[3], speed[3] = {0};
+unsigned char clock_reg[3];
+char speed[3] = {0};
 char  *event[ ] = { "ON",  "GN", "G1", "G2", "G3", "G4", "G5","GR", "C "};
 int pos = 0;
 unsigned int adc_val;
@@ -66,7 +67,7 @@ volatile unsigned int eventcount = 0;
 unsigned char event_changed = 0;
 char log[17];
     
-unsigned char original_password[5] = "1100";
+char original_password[5] = "1100";
 
 
 /*=================== DASHBOARD SCREEN ========================================*/
@@ -131,11 +132,11 @@ void dashboard(unsigned char key) {
         adc_val = read_adc(CHANNEL0);// 0 - 1023
         
         // compress the value into the range 0 - 99
-        adc_val = adc_val / 10.25; // 00 - 99
+        adc_val = (unsigned int) (adc_val / 10.25); // 00 - 99
         
         //Convert the speed into string
-        speed[0] = (adc_val / 10) + '0';
-        speed[1] = (adc_val % 10) + '0';
+        speed[0] = (char)(adc_val / 10) + '0';
+        speed[1] = (char)(adc_val % 10) + '0';
         speed[2] = '\0';
         
         if (event_changed)
@@ -255,8 +256,8 @@ void password(unsigned char key)
                 {
                 clcd_print("ATTEMPTS OVER", LINE1(0));
                 clcd_print("Try after : ", LINE2(0));
-                clcd_putch((sec / 10) + '0', LINE2(11));
-                clcd_putch((sec %10) + '0', LINE2(12));
+                clcd_putch((char)(sec / 10) + '0', LINE2(11));
+                clcd_putch((char)(sec %10) + '0', LINE2(12));
                 clcd_putch('s', LINE2(13));
                 }
                 
@@ -383,20 +384,23 @@ void menu(unsigned char key)
     /* Update LCD only when required */
     if (redraw)
     {
-        top = (selected == 0) ? 0 : selected - 1;
-        
-        
-          clear_clcd();
+         if (selected <= 1)
+             top = 0;
+        else
+              top = selected - 1;
 
-        /* Prepare LCD lines */
+         clear_clcd();
+
         line1[0] = (selected == top) ? '*' : ' ';
         line2[0] = (selected == top + 1) ? '*' : ' ';
 
         strncpy(line1 + 2, menu_items[top], 15);
-        strncpy(line2 + 2, menu_items[top + 1], 15);
 
-        clcd_print(line1, LINE1(0));
-        clcd_print(line2, LINE2(0));
+        if (top + 1 < 5)
+            strncpy(line2 + 2, menu_items[top + 1], 15);
+
+            clcd_print(line1, LINE1(0));
+            clcd_print(line2, LINE2(0));
     }
 }
 
@@ -798,11 +802,11 @@ void set_time(unsigned char key)
     /* SW4: Save time to RTC */
     if (key == SW4)
     {
-        write_ds1307(HOUR_ADDR,(digits[0] << 4) | digits[1]);
+        write_ds1307(HOUR_ADDR,(unsigned char)(digits[0] << 4) | digits[1]);
 
-        write_ds1307(MIN_ADDR,(digits[2] << 4) | digits[3]);
+        write_ds1307(MIN_ADDR,(unsigned char)(digits[2] << 4) | digits[3]);
 
-        write_ds1307(SEC_ADDR,(digits[4] << 4) | digits[5]);
+        write_ds1307(SEC_ADDR,(unsigned char)(digits[4] << 4) | digits[5]);
 
         clear_clcd();
 

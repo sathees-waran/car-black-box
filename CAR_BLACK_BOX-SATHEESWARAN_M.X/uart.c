@@ -7,7 +7,7 @@ void init_uart(unsigned long baud)
     SPEN = 1;
     
     /* Baud Rate Setting Register */
-    SPBRG = (FOSC / (16 * baud)) - 1;
+    SPBRG = (unsigned char)((FOSC / (16 * baud)) - 1);
     
     /* Configure asynchronous high-speed mode */
     TXSTA = 0x24;

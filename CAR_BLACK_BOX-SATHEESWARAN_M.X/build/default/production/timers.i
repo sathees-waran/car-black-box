@@ -1,4 +1,4 @@
-# 1 "../../../../../MC/timers.X/isr.c"
+# 1 "timers.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "../../../../../MC/timers.X/isr.c" 2
+# 1 "timers.c" 2
 # 1 "D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
 # 18 "D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -1716,32 +1716,43 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
-# 1 "../../../../../MC/timers.X/isr.c" 2
+# 1 "timers.c" 2
+
+# 1 "./timers.h" 1
+# 11 "./timers.h"
+void init_timer0(void);
+void init_timer2(void);
+# 2 "timers.c" 2
 
 
-extern volatile unsigned int sec;
-extern volatile unsigned char allow;
-
-__attribute__((picinterrupt(("")))) void isr(void)
+void init_timer0(void)
 {
-    static unsigned int count = 0;
+    TMR0 = 6;
 
-     if(TMR2IF)
-    {
+    T0CS = 0;
 
-        if(++count >= 5000)
-        {
-            count = 0;
-            if(sec > 0)
-            {
-                sec--;
-            }
-            if(sec == 0)
-            {
-                allow = 1;
-                TMR2ON = 0;
-            }
-        }
-        TMR2IF = 0;
-    }
+
+    TMR0IF = 0;
+
+    TMR0IE = 1;
+
+}
+void init_timer2(void)
+{
+
+    PR2 = 250;
+
+
+    TMR2IF = 0;
+
+    TMR2IE = 1;
+
+
+
+    T2CKPS1 = 0;
+    T2CKPS0 = 1;
+
+    PEIE = 1;
+    GIE = 1;
+
 }

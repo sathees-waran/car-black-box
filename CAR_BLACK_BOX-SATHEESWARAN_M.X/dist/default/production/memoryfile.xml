@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\25014_Car_Black_Box.X.production.hex">
+  <executable name="dist/default/production\CAR_BLACK_BOX-SATHEESWARAN_M.X.production.hex">
     <memory name="program">
       <units>words</units>
       <length>8192</length>
-      <used>7382</used>
-      <free>810</free>
+      <used>7374</used>
+      <free>818</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>368</length>
-      <used>326</used>
-      <free>42</free>
+      <used>324</used>
+      <free>44</free>
     </memory>
   </executable>
 </project>

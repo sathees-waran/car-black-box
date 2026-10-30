@@ -1,4 +1,4 @@
-# 1 "../../../../../MC/timers.X/timers.c"
+# 1 "isr.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "../../../../../MC/timers.X/timers.c" 2
+# 1 "isr.c" 2
 # 1 "D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
 # 18 "D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -1716,43 +1716,170 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
-# 1 "../../../../../MC/timers.X/timers.c" 2
+# 1 "isr.c" 2
 
-# 1 "../../../../../MC/timers.X/timers.h" 1
-# 11 "../../../../../MC/timers.X/timers.h"
+# 1 "./main.h" 1
+# 10 "./main.h"
+# 1 "./adc.h" 1
+# 12 "./adc.h"
+void init_adc(void);
+unsigned short read_adc(unsigned char channel);
+# 10 "./main.h" 2
+
+# 1 "./timers.h" 1
+# 11 "./timers.h"
 void init_timer0(void);
 void init_timer2(void);
-# 2 "../../../../../MC/timers.X/timers.c" 2
+# 11 "./main.h" 2
+
+# 1 "./digital_keypad.h" 1
+# 31 "./digital_keypad.h"
+unsigned char read_digital_keypad(unsigned char mode);
+void init_digital_keypad(void);
+# 12 "./main.h" 2
+
+# 1 "./clcd.h" 1
+# 33 "./clcd.h"
+void init_clcd(void);
+void clear_clcd(void);
+void clcd_putch(const char data, unsigned char addr);
+void clcd_print(const char *str, unsigned char addr);
+# 13 "./main.h" 2
+
+# 1 "./i2c.h" 1
+# 10 "./i2c.h"
+void init_i2c(unsigned long baud);
+void i2c_start(void);
+void i2c_rep_start(void);
+void i2c_stop(void);
+unsigned char i2c_read(unsigned char ack);
+int i2c_write(unsigned char data);
+# 14 "./main.h" 2
+
+# 1 "./ds1307.h" 1
+# 16 "./ds1307.h"
+void init_ds1307(void);
+unsigned char read_ds1307(unsigned char addr);
+void write_ds1307(unsigned char addr, unsigned char data);
+void get_time(unsigned char *clock_reg);
+void display_time(unsigned char *clock_reg);
+# 15 "./main.h" 2
+
+# 1 "./external_eeprom.h" 1
+# 74 "./external_eeprom.h"
+extern unsigned char log_head;
+extern unsigned char log_count;
+
+void write_external_eeprom(unsigned char address1, unsigned char data);
+unsigned char read_external_eeprom(unsigned char address1);
+
+ void init_event_log(void);
+ void store_event(unsigned char *clock, char *event, char *speed);
+# 16 "./main.h" 2
+
+# 1 "./uart.h" 1
+# 10 "./uart.h"
+void init_uart(unsigned long baud);
+void uart_putc(unsigned char data);
+void uart_puts(const char *s);
+# 17 "./main.h" 2
+
+# 1 "D:\\pic\\include\\c90\\string.h" 1 3
 
 
-void init_timer0(void)
+
+
+
+# 1 "D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\__size_t.h" 1 3
+
+
+
+typedef unsigned size_t;
+# 6 "D:\\pic\\include\\c90\\string.h" 2 3
+
+# 1 "D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\__null.h" 1 3
+# 7 "D:\\pic\\include\\c90\\string.h" 2 3
+
+
+
+
+
+
+
+extern void * memcpy(void *, const void *, size_t);
+extern void * memmove(void *, const void *, size_t);
+extern void * memset(void *, int, size_t);
+# 36 "D:\\pic\\include\\c90\\string.h" 3
+extern char * strcat(char *, const char *);
+extern char * strcpy(char *, const char *);
+extern char * strncat(char *, const char *, size_t);
+extern char * strncpy(char *, const char *, size_t);
+extern char * strdup(const char *);
+extern char * strtok(char *, const char *);
+
+
+extern int memcmp(const void *, const void *, size_t);
+extern int strcmp(const char *, const char *);
+extern int stricmp(const char *, const char *);
+extern int strncmp(const char *, const char *, size_t);
+extern int strnicmp(const char *, const char *, size_t);
+extern void * memchr(const void *, int, size_t);
+extern size_t strcspn(const char *, const char *);
+extern char * strpbrk(const char *, const char *);
+extern size_t strspn(const char *, const char *);
+extern char * strstr(const char *, const char *);
+extern char * stristr(const char *, const char *);
+extern char * strerror(int);
+extern size_t strlen(const char *);
+extern char * strchr(const char *, int);
+extern char * strichr(const char *, int);
+extern char * strrchr(const char *, int);
+extern char * strrichr(const char *, int);
+# 18 "./main.h" 2
+
+
+
+void dashboard(unsigned char key);
+void password(unsigned char key);
+void menu(unsigned char key);
+
+
+void clear_clcd(void);
+extern unsigned char key, operation;
+extern volatile unsigned int sec;
+extern volatile unsigned char allow;
+
+void init_event_log(void);
+void init_password(void);
+void set_time(unsigned char key);
+
+void store_event(unsigned char *clock, char *event,char *speed);
+void bcd_to_ascii(unsigned char value, char *buffer);
+
+void view_log(unsigned char key);
+void read_log(unsigned char index);
+void display_log(unsigned char index);
+void download_log(void);
+void change_password(unsigned char key);
+void clear_log(void);
+# 2 "isr.c" 2
+
+
+__attribute__((picinterrupt(("")))) void isr(void)
 {
-    TMR0 = 6;
+    static unsigned int count = 0;
 
-    T0CS = 0;
+     if(TMR2IF)
+    {
 
-
-    TMR0IF = 0;
-
-    TMR0IE = 1;
-
-}
-void init_timer2(void)
-{
-
-    PR2 = 250;
-
-
-    TMR2IF = 0;
-
-    TMR2IE = 1;
-
-
-
-    T2CKPS1 = 0;
-    T2CKPS0 = 1;
-
-    PEIE = 1;
-    GIE = 1;
-
+        if(++count >= 5000)
+        {
+            count = 0;
+            if(--sec == 0)
+            {
+                allow = 1;
+            }
+        }
+        TMR2IF = 0;
+    }
 }

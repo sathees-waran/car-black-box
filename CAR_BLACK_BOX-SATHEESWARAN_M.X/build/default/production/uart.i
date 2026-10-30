@@ -1732,7 +1732,7 @@ void init_uart(unsigned long baud)
     SPEN = 1;
 
 
-    SPBRG = (20000000 / (16 * baud)) - 1;
+    SPBRG = (unsigned char)((20000000 / (16 * baud)) - 1);
 
 
     TXSTA = 0x24;

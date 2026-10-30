@@ -1,18 +1,37 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[t ~ __interrupt . k ]
-[t T1 __interrupt ]
-"2899 D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+"59 D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[; ;D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 59: extern volatile unsigned char TMR0 __attribute__((address(0x001)));
+[v _TMR0 `Vuc ~T0 @X0 0 e@1 ]
+"2845
+[; ;D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2845: extern volatile __bit T0CS __attribute__((address(0x40D)));
+[v _T0CS `Vb ~T0 @X0 0 e@1037 ]
+"2881
+[; ;D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2881: extern volatile __bit TMR0IF __attribute__((address(0x5A)));
+[v _TMR0IF `Vb ~T0 @X0 0 e@90 ]
+"2878
+[; ;D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2878: extern volatile __bit TMR0IE __attribute__((address(0x5D)));
+[v _TMR0IE `Vb ~T0 @X0 0 e@93 ]
+"1816
+[; ;D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1816: extern volatile unsigned char PR2 __attribute__((address(0x092)));
+[v _PR2 `Vuc ~T0 @X0 0 e@146 ]
+"2899
 [; ;D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2899: extern volatile __bit TMR2IF __attribute__((address(0x61)));
 [v _TMR2IF `Vb ~T0 @X0 0 e@97 ]
-"3 ../../../../../MC/timers.X/isr.c
-[; ;../../../../../MC/timers.X/isr.c: 3: extern volatile unsigned int sec;
-[v _sec `Vui ~T0 @X0 0 e ]
-"4
-[; ;../../../../../MC/timers.X/isr.c: 4: extern volatile unsigned char allow;
-[v _allow `Vuc ~T0 @X0 0 e ]
-"2902 D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
-[; ;D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2902: extern volatile __bit TMR2ON __attribute__((address(0x92)));
-[v _TMR2ON `Vb ~T0 @X0 0 e@146 ]
+"2896
+[; ;D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2896: extern volatile __bit TMR2IE __attribute__((address(0x461)));
+[v _TMR2IE `Vb ~T0 @X0 0 e@1121 ]
+"2875
+[; ;D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2875: extern volatile __bit T2CKPS1 __attribute__((address(0x91)));
+[v _T2CKPS1 `Vb ~T0 @X0 0 e@145 ]
+"2872
+[; ;D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2872: extern volatile __bit T2CKPS0 __attribute__((address(0x90)));
+[v _T2CKPS0 `Vb ~T0 @X0 0 e@144 ]
+"2629
+[; ;D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2629: extern volatile __bit PEIE __attribute__((address(0x5E)));
+[v _PEIE `Vb ~T0 @X0 0 e@94 ]
+"2569
+[; ;D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2569: extern volatile __bit GIE __attribute__((address(0x5F)));
+[v _GIE `Vb ~T0 @X0 0 e@95 ]
 "54 D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
 [; ;D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -193,77 +212,60 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2363
 [; ;D:/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-[v $root$_isr `(v ~T0 @X0 0 e ]
-"6 ../../../../../MC/timers.X/isr.c
-[; ;../../../../../MC/timers.X/isr.c: 6: __attribute__((picinterrupt(("")))) void isr(void)
-[v _isr `(v ~T1 @X0 1 ef ]
-"7
-[; ;../../../../../MC/timers.X/isr.c: 7: {
+"4 timers.c
+[; ;timers.c: 4: void init_timer0(void)
+[v _init_timer0 `(v ~T0 @X0 1 ef ]
+"5
+[; ;timers.c: 5: {
 {
-[e :U _isr ]
+[e :U _init_timer0 ]
 [f ]
+"6
+[; ;timers.c: 6:     TMR0 = 6;
+[e = _TMR0 -> -> 6 `i `uc ]
 "8
-[; ;../../../../../MC/timers.X/isr.c: 8:     static unsigned int count = 0;
-[v F853 `ui ~T0 @X0 1 s count ]
-[i F853
--> -> 0 `i `ui
-]
-"10
-[; ;../../../../../MC/timers.X/isr.c: 10:      if(TMR2IF)
-[e $ ! _TMR2IF 96  ]
+[; ;timers.c: 8:     T0CS = 0;
+[e = _T0CS -> -> 0 `i `b ]
 "11
-[; ;../../../../../MC/timers.X/isr.c: 11:     {
-{
+[; ;timers.c: 11:     TMR0IF = 0;
+[e = _TMR0IF -> -> 0 `i `b ]
 "13
-[; ;../../../../../MC/timers.X/isr.c: 13:         if(++count >= 5000)
-[e $ ! >= =+ F853 -> -> 1 `i `ui -> -> 5000 `i `ui 97  ]
-"14
-[; ;../../../../../MC/timers.X/isr.c: 14:         {
-{
+[; ;timers.c: 13:     TMR0IE = 1;
+[e = _TMR0IE -> -> 1 `i `b ]
 "15
-[; ;../../../../../MC/timers.X/isr.c: 15:             count = 0;
-[e = F853 -> -> 0 `i `ui ]
-"16
-[; ;../../../../../MC/timers.X/isr.c: 16:             if(sec > 0)
-[e $ ! > _sec -> -> 0 `i `ui 98  ]
-"17
-[; ;../../../../../MC/timers.X/isr.c: 17:             {
-{
-"18
-[; ;../../../../../MC/timers.X/isr.c: 18:                 sec--;
-[e -- _sec -> -> 1 `i `Vui ]
-"19
-[; ;../../../../../MC/timers.X/isr.c: 19:             }
-}
-[e :U 98 ]
-"20
-[; ;../../../../../MC/timers.X/isr.c: 20:             if(sec == 0)
-[e $ ! == _sec -> -> 0 `i `ui 99  ]
-"21
-[; ;../../../../../MC/timers.X/isr.c: 21:             {
-{
-"22
-[; ;../../../../../MC/timers.X/isr.c: 22:                 allow = 1;
-[e = _allow -> -> 1 `i `uc ]
-"23
-[; ;../../../../../MC/timers.X/isr.c: 23:                 TMR2ON = 0;
-[e = _TMR2ON -> -> 0 `i `b ]
-"24
-[; ;../../../../../MC/timers.X/isr.c: 24:             }
-}
-[e :U 99 ]
-"25
-[; ;../../../../../MC/timers.X/isr.c: 25:         }
-}
-[e :U 97 ]
-"26
-[; ;../../../../../MC/timers.X/isr.c: 26:         TMR2IF = 0;
-[e = _TMR2IF -> -> 0 `i `b ]
-"27
-[; ;../../../../../MC/timers.X/isr.c: 27:     }
-}
-[e :U 96 ]
-"28
-[; ;../../../../../MC/timers.X/isr.c: 28: }
+[; ;timers.c: 15: }
 [e :UE 95 ]
+}
+"16
+[; ;timers.c: 16: void init_timer2(void)
+[v _init_timer2 `(v ~T0 @X0 1 ef ]
+"17
+[; ;timers.c: 17: {
+{
+[e :U _init_timer2 ]
+[f ]
+"19
+[; ;timers.c: 19:     PR2 = 250;
+[e = _PR2 -> -> 250 `i `uc ]
+"22
+[; ;timers.c: 22:     TMR2IF = 0;
+[e = _TMR2IF -> -> 0 `i `b ]
+"24
+[; ;timers.c: 24:     TMR2IE = 1;
+[e = _TMR2IE -> -> 1 `i `b ]
+"28
+[; ;timers.c: 28:     T2CKPS1 = 0;
+[e = _T2CKPS1 -> -> 0 `i `b ]
+"29
+[; ;timers.c: 29:     T2CKPS0 = 1;
+[e = _T2CKPS0 -> -> 1 `i `b ]
+"31
+[; ;timers.c: 31:     PEIE = 1;
+[e = _PEIE -> -> 1 `i `b ]
+"32
+[; ;timers.c: 32:     GIE = 1;
+[e = _GIE -> -> 1 `i `b ]
+"34
+[; ;timers.c: 34: }
+[e :UE 96 ]
 }

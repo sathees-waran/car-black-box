@@ -215,8 +215,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "12
 [; ;digital_keypad.c: 12:     static unsigned char once = 1;
-[v F1021 `uc ~T0 @X0 1 s once ]
-[i F1021
+[v F1023 `uc ~T0 @X0 1 s once ]
+[i F1023
 -> -> 1 `i `uc
 ]
 "14
@@ -241,13 +241,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "20
 [; ;digital_keypad.c: 20:         if (((PORTB & 0x3F) != 0x3F) && once)
-[e $ ! && != & -> _PORTB `i -> 63 `i -> 63 `i != -> F1021 `i -> 0 `i 99  ]
+[e $ ! && != & -> _PORTB `i -> 63 `i -> 63 `i != -> F1023 `i -> 0 `i 99  ]
 "21
 [; ;digital_keypad.c: 21:         {
 {
 "22
 [; ;digital_keypad.c: 22:             once = 0;
-[e = F1021 -> -> 0 `i `uc ]
+[e = F1023 -> -> 0 `i `uc ]
 "24
 [; ;digital_keypad.c: 24:             return PORTB & 0x3F;
 [e ) -> & -> _PORTB `i -> 63 `i `uc ]
@@ -265,7 +265,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 "28
 [; ;digital_keypad.c: 28:             once = 1;
-[e = F1021 -> -> 1 `i `uc ]
+[e = F1023 -> -> 1 `i `uc ]
 "29
 [; ;digital_keypad.c: 29:         }
 }

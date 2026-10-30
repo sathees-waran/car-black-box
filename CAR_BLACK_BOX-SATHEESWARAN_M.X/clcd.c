@@ -3,14 +3,14 @@
 
 static void clcd_write(unsigned char byte, unsigned char mode)
 {
-    CLCD_RS = mode;
+    CLCD_RS = (mode != 0);
     
     CLCD_DATA_PORT = byte & 0xF0;
     CLCD_EN = HI;
     __delay_us(100);
     CLCD_EN = LOW;
 
-    CLCD_DATA_PORT = (byte & 0x0F) << 4;
+    CLCD_DATA_PORT = (unsigned char)((byte & 0x0F) << 4);
     CLCD_EN = HI;
     __delay_us(100);
     CLCD_EN = LOW;

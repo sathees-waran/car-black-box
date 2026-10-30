@@ -1848,13 +1848,14 @@ void menu(unsigned char key);
 
 void clear_clcd(void);
 extern unsigned char key, operation;
+extern volatile unsigned int sec;
+extern volatile unsigned char allow;
 
 void init_event_log(void);
 void init_password(void);
 void set_time(unsigned char key);
 
 void store_event(unsigned char *clock, char *event,char *speed);
-
 void bcd_to_ascii(unsigned char value, char *buffer);
 
 void view_log(unsigned char key);
@@ -1869,7 +1870,8 @@ void clear_log(void);
 
 
 
-unsigned char clock_reg[3], speed[3] = {0};
+unsigned char clock_reg[3];
+char speed[3] = {0};
 char *event[ ] = { "ON", "GN", "G1", "G2", "G3", "G4", "G5","GR", "C "};
 int pos = 0;
 unsigned int adc_val;
@@ -1879,7 +1881,7 @@ volatile unsigned int eventcount = 0;
 unsigned char event_changed = 0;
 char log[17];
 
-unsigned char original_password[5] = "1100";
+char original_password[5] = "1100";
 
 
 
@@ -1944,11 +1946,11 @@ void dashboard(unsigned char key) {
         adc_val = read_adc(0x00);
 
 
-        adc_val = adc_val / 10.25;
+        adc_val = (unsigned int) (adc_val / 10.25);
 
 
-        speed[0] = (adc_val / 10) + '0';
-        speed[1] = (adc_val % 10) + '0';
+        speed[0] = (char)(adc_val / 10) + '0';
+        speed[1] = (char)(adc_val % 10) + '0';
         speed[2] = '\0';
 
         if (event_changed)
@@ -2068,8 +2070,8 @@ void password(unsigned char key)
                 {
                 clcd_print("ATTEMPTS OVER", (0x80 + 0));
                 clcd_print("Try after : ", (0xC0 + 0));
-                clcd_putch((sec / 10) + '0', (0xC0 + 11));
-                clcd_putch((sec %10) + '0', (0xC0 + 12));
+                clcd_putch((char)(sec / 10) + '0', (0xC0 + 11));
+                clcd_putch((char)(sec %10) + '0', (0xC0 + 12));
                 clcd_putch('s', (0xC0 + 13));
                 }
 
@@ -2196,20 +2198,23 @@ void menu(unsigned char key)
 
     if (redraw)
     {
-        top = (selected == 0) ? 0 : selected - 1;
+         if (selected <= 1)
+             top = 0;
+        else
+              top = selected - 1;
 
-
-          clear_clcd();
-
+         clear_clcd();
 
         line1[0] = (selected == top) ? '*' : ' ';
         line2[0] = (selected == top + 1) ? '*' : ' ';
 
         strncpy(line1 + 2, menu_items[top], 15);
-        strncpy(line2 + 2, menu_items[top + 1], 15);
 
-        clcd_print(line1, (0x80 + 0));
-        clcd_print(line2, (0xC0 + 0));
+        if (top + 1 < 5)
+            strncpy(line2 + 2, menu_items[top + 1], 15);
+
+            clcd_print(line1, (0x80 + 0));
+            clcd_print(line2, (0xC0 + 0));
     }
 }
 
@@ -2611,11 +2616,11 @@ void set_time(unsigned char key)
 
     if (key == 0x37)
     {
-        write_ds1307(0x02,(digits[0] << 4) | digits[1]);
+        write_ds1307(0x02,(unsigned char)(digits[0] << 4) | digits[1]);
 
-        write_ds1307(0x01,(digits[2] << 4) | digits[3]);
+        write_ds1307(0x01,(unsigned char)(digits[2] << 4) | digits[3]);
 
-        write_ds1307(0x00,(digits[4] << 4) | digits[5]);
+        write_ds1307(0x00,(unsigned char)(digits[4] << 4) | digits[5]);
 
         clear_clcd();
 

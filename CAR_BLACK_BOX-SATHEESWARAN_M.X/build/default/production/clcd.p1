@@ -216,8 +216,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;clcd.c: 5: {
 [f ]
 "6
-[; ;clcd.c: 6:     RE2 = mode;
-[e = _RE2 -> _mode `b ]
+[; ;clcd.c: 6:     RE2 = (mode != 0);
+[e = _RE2 != -> _mode `i -> 0 `i ]
 "8
 [; ;clcd.c: 8:     PORTD = byte & 0xF0;
 [e = _PORTD -> & -> _byte `i -> 240 `i `uc ]
@@ -231,7 +231,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;clcd.c: 11:     RE1 = 0;
 [e = _RE1 -> -> 0 `i `b ]
 "13
-[; ;clcd.c: 13:     PORTD = (byte & 0x0F) << 4;
+[; ;clcd.c: 13:     PORTD = (unsigned char)((byte & 0x0F) << 4);
 [e = _PORTD -> << & -> _byte `i -> 15 `i -> 4 `i `uc ]
 "14
 [; ;clcd.c: 14:     RE1 = 1;

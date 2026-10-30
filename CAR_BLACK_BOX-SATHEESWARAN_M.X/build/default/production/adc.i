@@ -1846,13 +1846,14 @@ void menu(unsigned char key);
 
 void clear_clcd(void);
 extern unsigned char key, operation;
+extern volatile unsigned int sec;
+extern volatile unsigned char allow;
 
 void init_event_log(void);
 void init_password(void);
 void set_time(unsigned char key);
 
 void store_event(unsigned char *clock, char *event,char *speed);
-
 void bcd_to_ascii(unsigned char value, char *buffer);
 
 void view_log(unsigned char key);
@@ -1878,14 +1879,14 @@ unsigned short read_adc(unsigned char channel)
     unsigned short adc_reg_val;
 
 
-    ADCON0 = (ADCON0 & 0xC7) | (channel << 3);
+    ADCON0 = (unsigned char)(ADCON0 & 0xC7) | (unsigned char)(channel << 3);
 
 
     GO = 1;
 
     while (nDONE);
 
-    adc_reg_val = (ADRESH << 8) | ADRESL;
+    adc_reg_val = (unsigned short)(((unsigned short)ADRESH << 8) |(unsigned short)ADRESL);
 
     return adc_reg_val;
 }

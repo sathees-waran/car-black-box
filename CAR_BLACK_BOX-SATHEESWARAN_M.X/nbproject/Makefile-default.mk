@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=adc.c clcd.c dashboard.c digital_keypad.c ds1307.c external_eeprom.c i2c.c main.c ../../../../../MC/timers.X/isr.c ../../../../../MC/timers.X/timers.c uart.c
+SOURCEFILES_QUOTED_IF_SPACED=adc.c clcd.c dashboard.c digital_keypad.c ds1307.c external_eeprom.c i2c.c isr.c main.c timers.c uart.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/adc.p1 ${OBJECTDIR}/clcd.p1 ${OBJECTDIR}/dashboard.p1 ${OBJECTDIR}/digital_keypad.p1 ${OBJECTDIR}/ds1307.p1 ${OBJECTDIR}/external_eeprom.p1 ${OBJECTDIR}/i2c.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/_ext/1420152318/isr.p1 ${OBJECTDIR}/_ext/1420152318/timers.p1 ${OBJECTDIR}/uart.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/adc.p1.d ${OBJECTDIR}/clcd.p1.d ${OBJECTDIR}/dashboard.p1.d ${OBJECTDIR}/digital_keypad.p1.d ${OBJECTDIR}/ds1307.p1.d ${OBJECTDIR}/external_eeprom.p1.d ${OBJECTDIR}/i2c.p1.d ${OBJECTDIR}/main.p1.d ${OBJECTDIR}/_ext/1420152318/isr.p1.d ${OBJECTDIR}/_ext/1420152318/timers.p1.d ${OBJECTDIR}/uart.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/adc.p1 ${OBJECTDIR}/clcd.p1 ${OBJECTDIR}/dashboard.p1 ${OBJECTDIR}/digital_keypad.p1 ${OBJECTDIR}/ds1307.p1 ${OBJECTDIR}/external_eeprom.p1 ${OBJECTDIR}/i2c.p1 ${OBJECTDIR}/isr.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/timers.p1 ${OBJECTDIR}/uart.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/adc.p1.d ${OBJECTDIR}/clcd.p1.d ${OBJECTDIR}/dashboard.p1.d ${OBJECTDIR}/digital_keypad.p1.d ${OBJECTDIR}/ds1307.p1.d ${OBJECTDIR}/external_eeprom.p1.d ${OBJECTDIR}/i2c.p1.d ${OBJECTDIR}/isr.p1.d ${OBJECTDIR}/main.p1.d ${OBJECTDIR}/timers.p1.d ${OBJECTDIR}/uart.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/adc.p1 ${OBJECTDIR}/clcd.p1 ${OBJECTDIR}/dashboard.p1 ${OBJECTDIR}/digital_keypad.p1 ${OBJECTDIR}/ds1307.p1 ${OBJECTDIR}/external_eeprom.p1 ${OBJECTDIR}/i2c.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/_ext/1420152318/isr.p1 ${OBJECTDIR}/_ext/1420152318/timers.p1 ${OBJECTDIR}/uart.p1
+OBJECTFILES=${OBJECTDIR}/adc.p1 ${OBJECTDIR}/clcd.p1 ${OBJECTDIR}/dashboard.p1 ${OBJECTDIR}/digital_keypad.p1 ${OBJECTDIR}/ds1307.p1 ${OBJECTDIR}/external_eeprom.p1 ${OBJECTDIR}/i2c.p1 ${OBJECTDIR}/isr.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/timers.p1 ${OBJECTDIR}/uart.p1
 
 # Source Files
-SOURCEFILES=adc.c clcd.c dashboard.c digital_keypad.c ds1307.c external_eeprom.c i2c.c main.c ../../../../../MC/timers.X/isr.c ../../../../../MC/timers.X/timers.c uart.c
+SOURCEFILES=adc.c clcd.c dashboard.c digital_keypad.c ds1307.c external_eeprom.c i2c.c isr.c main.c timers.c uart.c
 
 
 
@@ -150,6 +150,14 @@ ${OBJECTDIR}/i2c.p1: i2c.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/i2c.d ${OBJECTDIR}/i2c.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/i2c.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+${OBJECTDIR}/isr.p1: isr.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/isr.p1.d 
+	@${RM} ${OBJECTDIR}/isr.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/isr.p1 isr.c 
+	@-${MV} ${OBJECTDIR}/isr.d ${OBJECTDIR}/isr.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/isr.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
 ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.p1.d 
@@ -158,21 +166,13 @@ ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/main.d ${OBJECTDIR}/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/1420152318/isr.p1: ../../../../../MC/timers.X/isr.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1420152318" 
-	@${RM} ${OBJECTDIR}/_ext/1420152318/isr.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1420152318/isr.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1420152318/isr.p1 ../../../../../MC/timers.X/isr.c 
-	@-${MV} ${OBJECTDIR}/_ext/1420152318/isr.d ${OBJECTDIR}/_ext/1420152318/isr.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1420152318/isr.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
-${OBJECTDIR}/_ext/1420152318/timers.p1: ../../../../../MC/timers.X/timers.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1420152318" 
-	@${RM} ${OBJECTDIR}/_ext/1420152318/timers.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1420152318/timers.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1420152318/timers.p1 ../../../../../MC/timers.X/timers.c 
-	@-${MV} ${OBJECTDIR}/_ext/1420152318/timers.d ${OBJECTDIR}/_ext/1420152318/timers.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1420152318/timers.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/timers.p1: timers.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/timers.p1.d 
+	@${RM} ${OBJECTDIR}/timers.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/timers.p1 timers.c 
+	@-${MV} ${OBJECTDIR}/timers.d ${OBJECTDIR}/timers.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/timers.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 ${OBJECTDIR}/uart.p1: uart.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -239,6 +239,14 @@ ${OBJECTDIR}/i2c.p1: i2c.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/i2c.d ${OBJECTDIR}/i2c.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/i2c.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+${OBJECTDIR}/isr.p1: isr.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/isr.p1.d 
+	@${RM} ${OBJECTDIR}/isr.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/isr.p1 isr.c 
+	@-${MV} ${OBJECTDIR}/isr.d ${OBJECTDIR}/isr.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/isr.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
 ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.p1.d 
@@ -247,21 +255,13 @@ ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/main.d ${OBJECTDIR}/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/1420152318/isr.p1: ../../../../../MC/timers.X/isr.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1420152318" 
-	@${RM} ${OBJECTDIR}/_ext/1420152318/isr.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1420152318/isr.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1420152318/isr.p1 ../../../../../MC/timers.X/isr.c 
-	@-${MV} ${OBJECTDIR}/_ext/1420152318/isr.d ${OBJECTDIR}/_ext/1420152318/isr.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1420152318/isr.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
-${OBJECTDIR}/_ext/1420152318/timers.p1: ../../../../../MC/timers.X/timers.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1420152318" 
-	@${RM} ${OBJECTDIR}/_ext/1420152318/timers.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1420152318/timers.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1420152318/timers.p1 ../../../../../MC/timers.X/timers.c 
-	@-${MV} ${OBJECTDIR}/_ext/1420152318/timers.d ${OBJECTDIR}/_ext/1420152318/timers.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1420152318/timers.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/timers.p1: timers.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/timers.p1.d 
+	@${RM} ${OBJECTDIR}/timers.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp=${DFP_DIR}/xc8  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx032 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/timers.p1 timers.c 
+	@-${MV} ${OBJECTDIR}/timers.d ${OBJECTDIR}/timers.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/timers.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 ${OBJECTDIR}/uart.p1: uart.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 

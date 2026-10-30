@@ -1846,13 +1846,14 @@ void menu(unsigned char key);
 
 void clear_clcd(void);
 extern unsigned char key, operation;
+extern volatile unsigned int sec;
+extern volatile unsigned char allow;
 
 void init_event_log(void);
 void init_password(void);
 void set_time(unsigned char key);
 
 void store_event(unsigned char *clock, char *event,char *speed);
-
 void bcd_to_ascii(unsigned char value, char *buffer);
 
 void view_log(unsigned char key);
@@ -1866,14 +1867,14 @@ void clear_log(void);
 
 static void clcd_write(unsigned char byte, unsigned char mode)
 {
-    RE2 = mode;
+    RE2 = (mode != 0);
 
     PORTD = byte & 0xF0;
     RE1 = 1;
     _delay((unsigned long)((100)*(20000000/4000000.0)));
     RE1 = 0;
 
-    PORTD = (byte & 0x0F) << 4;
+    PORTD = (unsigned char)((byte & 0x0F) << 4);
     RE1 = 1;
     _delay((unsigned long)((100)*(20000000/4000000.0)));
     RE1 = 0;

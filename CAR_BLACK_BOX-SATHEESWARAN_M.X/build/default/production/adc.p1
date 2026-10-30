@@ -235,8 +235,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;adc.c: 15:     unsigned short adc_reg_val;
 [v _adc_reg_val `us ~T0 @X0 1 a ]
 "18
-[; ;adc.c: 18:     ADCON0 = (ADCON0 & 0xC7) | (channel << 3);
-[e = _ADCON0 -> | & -> _ADCON0 `i -> 199 `i << -> _channel `i -> 3 `i `uc ]
+[; ;adc.c: 18:     ADCON0 = (unsigned char)(ADCON0 & 0xC7) | (unsigned char)(channel << 3);
+[e = _ADCON0 -> | -> -> & -> _ADCON0 `i -> 199 `i `uc `i -> -> << -> _channel `i -> 3 `i `uc `i `uc ]
 "21
 [; ;adc.c: 21:     GO = 1;
 [e = _GO -> -> 1 `i `b ]
@@ -248,8 +248,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ _nDONE 98  ]
 [e :U 99 ]
 "25
-[; ;adc.c: 25:     adc_reg_val = (ADRESH << 8) | ADRESL;
-[e = _adc_reg_val -> | << -> _ADRESH `i -> 8 `i -> _ADRESL `i `us ]
+[; ;adc.c: 25:     adc_reg_val = (unsigned short)(((unsigned short)ADRESH << 8) |(unsigned short)ADRESL);
+[e = _adc_reg_val -> | << -> -> _ADRESH `us `ui -> 8 `i -> -> _ADRESL `us `ui `us ]
 "27
 [; ;adc.c: 27:     return adc_reg_val;
 [e ) _adc_reg_val ]
