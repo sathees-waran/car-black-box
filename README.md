@@ -24,8 +24,9 @@ A PIC16F877A-based embedded data-logging system that records selected vehicle ev
 11. [Password Management](#11-password-management)
 12. [Build and Simulation](#12-build-and-simulation)
 13. [UART Log Download](#13-uart-log-download)
-14. [Author](#14-author)
+14. [Simulation Results](#14-simulation-results)
 15. [Project Resources and Downloads](#15-project-resources-and-downloads)
+16. [Author](#16-author)
 
 ## 01. Project Overview
 
@@ -311,13 +312,43 @@ The project transfers stored event records to a PC through UART.
 
 The baud rate and other serial parameters in Tera Term must match the firmware and simulator configuration.
 
-## 14. Author
 
-**Satheeswaran M**  
-Electronics and Communication Engineering
+## 14. Simulation Results
 
-- GitHub: [sathees-waran](https://github.com/sathees-waran)
-- LinkedIn: **[Add your LinkedIn profile URL here]**
+The Car Black Box system was simulated using **PICSimLab with the PICGenios development board**. The following screenshots demonstrate the application screens and UART-based event-log downloading.
+
+### 14.1 Dashboard Display
+
+The dashboard displays the real-time clock, current event/gear status, and vehicle speed on the 16×2 CLCD.
+
+![Car Black Box Dashboard](assets/images/dashboard.png)
+
+*Figure 1: Live dashboard displaying time, event status, and speed.*
+
+### 14.2 Password Authentication
+
+The password screen provides controlled access to the application menu.
+
+![Password Authentication Screen](assets/images/password_screen.png)
+
+*Figure 2: Password entry screen displayed on the CLCD.*
+
+### 14.3 Application Menu
+
+The menu provides access to the event-log viewing, downloading, and other system operations.
+
+![Car Black Box Menu](assets/images/menu_screen.png)
+
+*Figure 3: Menu interface with selectable application options.*
+
+### 14.4 UART Event Log Download
+
+Stored event records are transmitted through UART and displayed on the PC using Tera Term.
+
+![UART Event Log Download](assets/images/uart_log_download.png)
+
+*Figure 4: Event records received in Tera Term through the UART interface.*
+
 
 ## 15. Project Resources and Downloads
 
@@ -332,3 +363,12 @@ Electronics and Communication Engineering
 | com0com | Virtual null-modem / paired COM ports | [Project page](https://sourceforge.net/projects/com0com/) |
 
 **Virtual COM-port note:** com0com can create a pair of connected virtual COM ports. Configure the simulator and Tera Term to use the corresponding ends. Compatibility and driver-signing requirements may vary by Windows version and utility release.
+
+## 16. Author
+
+**Satheeswaran M**  
+
+- **Email:** [satheeswaran.vnr@gmail.com](mailto:satheeswaran.vnr@gmail.com)
+- **LinkedIn:** [sathees-waran](https://www.linkedin.com/in/sathees-waran/)
+
+---
