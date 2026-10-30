@@ -1,0 +1,1908 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\25014_Car_Black_Box.X.production.o
+cinit CODE 0 F F 4D 2
+text1 CODE 0 1697 1697 AD 2
+text2 CODE 0 8DC 8DC DF 2
+text3 CODE 0 383 383 24B 2
+text4 CODE 0 1D29 1D29 2F 2
+text5 CODE 0 5CE 5CE 21B 2
+text6 CODE 0 C91 C91 192 2
+text7 CODE 0 11DE 11DE 4A 2
+text8 CODE 0 1F78 1F78 42 2
+text9 CODE 0 1E8F 1E8F 37 2
+text10 CODE 0 1BAB 1BAB 11 2
+text11 CODE 0 1522 1522 78 2
+text12 CODE 0 1DBB 1DBB 34 2
+text13 CODE 0 13E0 13E0 68 2
+text14 CODE 0 1F01 1F01 3B 2
+text15 CODE 0 1BEC 1BEC 1B 2
+text16 CODE 0 1C24 1C24 1E 2
+text17 CODE 0 1B38 1B38 6 2
+text18 CODE 0 1B87 1B87 B 2
+text19 CODE 0 14B1 14B1 71 2
+text20 CODE 0 1B3E 1B3E 7 2
+text21 CODE 0 B12 B12 17F 2
+text22 CODE 0 1CA8 1CA8 26 2
+text23 CODE 0 1B67 1B67 A 2
+text24 CODE 0 12CC 12CC 54 2
+text25 CODE 0 1E24 1E24 35 2
+text26 CODE 0 1448 1448 69 2
+text27 CODE 0 9BB 9BB 157 2
+text28 CODE 0 814 814 C8 2
+text29 CODE 0 1BD1 1BD1 1B 2
+text30 CODE 0 7E9 7E9 15 2
+text31 CODE 0 1320 1320 5B 2
+text32 CODE 0 1C42 1C42 21 2
+text33 CODE 0 1CFA 1CFA 2F 2
+text34 CODE 0 1DEF 1DEF 35 2
+text35 CODE 0 1B7C 1B7C B 2
+text36 CODE 0 1C85 1C85 23 2
+text37 CODE 0 137B 137B 65 2
+text38 CODE 0 1744 1744 BC 2
+text39 CODE 0 1F3C 1F3C 3C 2
+text40 CODE 0 1FBA 1FBA 46 2
+text41 CODE 0 159A 159A 7C 2
+text42 CODE 0 E23 E23 1DD 2
+text43 CODE 0 1228 1228 51 2
+text44 CODE 0 5C 5C 327 2
+text45 CODE 0 1D58 1D58 30 2
+text46 CODE 0 1B71 1B71 B 2
+text47 CODE 0 1B5E 1B5E 9 2
+text48 CODE 0 1B55 1B55 9 2
+text49 CODE 0 1B9E 1B9E D 2
+text50 CODE 0 1C07 1C07 1D 2
+text51 CODE 0 1CCE 1CCE 2C 2
+text52 CODE 0 1B45 1B45 8 2
+text53 CODE 0 1BBC 1BBC 15 2
+text54 CODE 0 1D88 1D88 33 2
+text55 CODE 0 1E59 1E59 36 2
+text56 CODE 0 1EC6 1EC6 3B 2
+maintext CODE 0 1616 1616 81 2
+cstackCOMMON COMMON 1 70 70 8 1
+cstackBANK0 BANK0 1 20 20 34 1
+cstackBANK2 BANK2 1 110 110 35 1
+inittext CODE 0 801 801 13 2
+intentry CODE 0 4 4 8 2
+bssBANK0 BANK0 1 54 54 11 1
+bssBANK1 BANK1 1 A0 A0 3B 1
+stringtext STRCODE 0 1000 1000 1DB 2
+idataBANK0 CODE 0 11DB 11DB 3 2
+idataBANK1 CODE 0 1B92 1B92 C 2
+idataBANK2 CODE 0 1C63 1C63 22 2
+idataBANK3 CODE 0 1279 1279 53 2
+strings STRING 0 1800 1800 12 2
+dataBANK0 BANK0 1 65 65 3 1
+dataBANK1 BANK1 1 DB DB C 1
+dataBANK2 BANK2 1 145 145 22 1
+dataBANK3 BANK3 1 190 190 53 1
+clrtext CODE 0 1B4D 1B4D 8 2
+bssCOMMON COMMON 1 78 78 3 1
+config CONFIG 4 2007 2007 1 2
+$C:\Users\sathe\AppData\Local\Temp\s8q8.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 C C 3 2
+config CONFIG 4 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 68-6F 1
+RAM E7-EF 1
+RAM 167-16F 1
+RAM 1E3-1EF 1
+BANK0 68-6F 1
+BANK1 E7-EF 1
+BANK2 167-16F 1
+BANK3 1E3-1EF 1
+CONST 3-3 2
+CONST 7FE-800 2
+CONST 1812-1B37 2
+ENTRY 3-3 2
+ENTRY 7FE-800 2
+ENTRY 1812-1B37 2
+IDLOC 2000-2003 2
+STACK 1E3-1EF 1
+CODE 3-3 2
+CODE 7FE-800 2
+CODE 1812-1B37 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7B-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 7FE-800 2
+STRCODE 1812-1B37 2
+STRING 3-3 2
+STRING 7FE-800 2
+STRING 1812-1B37 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\25014_Car_Black_Box.X.production.o
+F cinit CODE >2638:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+F cinit CODE >2641:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+F cinit CODE >2868:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+10 cinit CODE >2869:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+11 cinit CODE >2870:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+12 cinit CODE >2871:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+13 cinit CODE >2872:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+14 cinit CODE >2873:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+15 cinit CODE >2874:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+16 cinit CODE >2875:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+17 cinit CODE >2876:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+18 cinit CODE >2877:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+1D cinit CODE >2881:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+1E cinit CODE >2882:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+1F cinit CODE >2883:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+20 cinit CODE >2884:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+21 cinit CODE >2885:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+22 cinit CODE >2886:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+23 cinit CODE >2887:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+24 cinit CODE >2888:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+25 cinit CODE >2889:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+2A cinit CODE >2893:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+2B cinit CODE >2894:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+2C cinit CODE >2895:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+2D cinit CODE >2896:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+2E cinit CODE >2897:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+2F cinit CODE >2898:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+30 cinit CODE >2899:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+31 cinit CODE >2900:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+32 cinit CODE >2901:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+33 cinit CODE >2902:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+38 cinit CODE >2906:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+39 cinit CODE >2907:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+3A cinit CODE >2908:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+3B cinit CODE >2909:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+3C cinit CODE >2910:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+3D cinit CODE >2911:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+3E cinit CODE >2912:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+3F cinit CODE >2913:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+40 cinit CODE >2914:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+45 cinit CODE >2933:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+46 cinit CODE >2934:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+47 cinit CODE >2935:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+48 cinit CODE >2936:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+4D cinit CODE >2939:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+4E cinit CODE >2940:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+4F cinit CODE >2941:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+50 cinit CODE >2942:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+55 cinit CODE >2945:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+56 cinit CODE >2946:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+57 cinit CODE >2947:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+58 cinit CODE >2953:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+58 cinit CODE >2955:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+59 cinit CODE >2956:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+4 intentry CODE >6:D:\space/MC/timers.X/isr.c
+1EC6 text56 CODE >6:D:\space/MC/timers.X/isr.c
+1EC6 text56 CODE >10:D:\space/MC/timers.X/isr.c
+1ECC text56 CODE >13:D:\space/MC/timers.X/isr.c
+1EDD text56 CODE >15:D:\space/MC/timers.X/isr.c
+1EDF text56 CODE >16:D:\space/MC/timers.X/isr.c
+1EE7 text56 CODE >18:D:\space/MC/timers.X/isr.c
+1EED text56 CODE >20:D:\space/MC/timers.X/isr.c
+1EF3 text56 CODE >22:D:\space/MC/timers.X/isr.c
+1EF7 text56 CODE >23:D:\space/MC/timers.X/isr.c
+1EF8 text56 CODE >26:D:\space/MC/timers.X/isr.c
+1EFA text56 CODE >28:D:\space/MC/timers.X/isr.c
+1E59 text55 CODE >4:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1E5A text55 CODE >6:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1E64 text55 CODE >8:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1E67 text55 CODE >9:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1E68 text55 CODE >10:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1E6D text55 CODE >11:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1E70 text55 CODE >13:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1E7C text55 CODE >14:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1E7D text55 CODE >15:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1E82 text55 CODE >16:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1E85 text55 CODE >18:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1E8E text55 CODE >19:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1D88 text54 CODE >62:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1D88 text54 CODE >64:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1D91 text54 CODE >66:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1D92 text54 CODE >68:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1DA2 text54 CODE >69:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1DAA text54 CODE >66:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1DBA text54 CODE >71:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1BBC text53 CODE >56:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1BBF text53 CODE >58:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1BC6 text53 CODE >59:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1BD0 text53 CODE >60:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1B45 text52 CODE >73:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1B45 text52 CODE >75:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1B4C text52 CODE >76:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1CCE text51 CODE >33:D:\pic\sources\c90\common\strcmp.c
+1CD1 text51 CODE >37:D:\pic\sources\c90\common\strcmp.c
+1CD2 text51 CODE >38:D:\pic\sources\c90\common\strcmp.c
+1CD6 text51 CODE >39:D:\pic\sources\c90\common\strcmp.c
+1CDA text51 CODE >37:D:\pic\sources\c90\common\strcmp.c
+1CF4 text51 CODE >41:D:\pic\sources\c90\common\strcmp.c
+1CF9 text51 CODE >42:D:\pic\sources\c90\common\strcmp.c
+1C07 text50 CODE >8:D:\pic\sources\c90\common\strcpy.c
+1C08 text50 CODE >18:D:\pic\sources\c90\common\strcpy.c
+1C0C text50 CODE >19:D:\pic\sources\c90\common\strcpy.c
+1C0D text50 CODE >20:D:\pic\sources\c90\common\strcpy.c
+1C11 text50 CODE >21:D:\pic\sources\c90\common\strcpy.c
+1C15 text50 CODE >19:D:\pic\sources\c90\common\strcpy.c
+1C23 text50 CODE >24:D:\pic\sources\c90\common\strcpy.c
+1B9E text49 CODE >16:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B9E text49 CODE >19:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1BAA text49 CODE >20:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B55 text48 CODE >22:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B55 text48 CODE >24:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B5A text48 CODE >25:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B5D text48 CODE >26:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B5E text47 CODE >35:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B5E text47 CODE >37:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B63 text47 CODE >38:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B66 text47 CODE >39:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B71 text46 CODE >65:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B72 text46 CODE >67:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B77 text46 CODE >68:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B7B text46 CODE >70:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B7B text46 CODE >71:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1D58 text45 CODE >8:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1D59 text45 CODE >10:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1D5E text45 CODE >11:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1D64 text45 CODE >12:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1D6A text45 CODE >13:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1D70 text45 CODE >14:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1D75 text45 CODE >15:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1D87 text45 CODE >16:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+5C text44 CODE >898:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+5F text44 CODE >911:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+66 text44 CODE >913:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+6B text44 CODE >915:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+6E text44 CODE >916:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+6F text44 CODE >917:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+73 text44 CODE >919:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+82 text44 CODE >921:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+85 text44 CODE >922:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+9C text44 CODE >926:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A3 text44 CODE >928:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A8 text44 CODE >930:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+AB text44 CODE >931:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+AE text44 CODE >932:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+AF text44 CODE >934:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B4 text44 CODE >939:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B9 text44 CODE >941:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+CB text44 CODE >943:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+E2 text44 CODE >945:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+ED text44 CODE >946:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+F3 text44 CODE >949:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+F9 text44 CODE >951:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+FC text44 CODE >953:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+10E text44 CODE >955:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+112 text44 CODE >956:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+113 text44 CODE >958:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+118 text44 CODE >959:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+127 text44 CODE >961:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+12A text44 CODE >962:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+142 text44 CODE >966:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+147 text44 CODE >967:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+156 text44 CODE >968:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+165 text44 CODE >970:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+174 text44 CODE >972:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+177 text44 CODE >973:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+178 text44 CODE >975:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+17D text44 CODE >976:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+18C text44 CODE >978:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+18F text44 CODE >979:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1A7 text44 CODE >985:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1AC text44 CODE >987:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1BE text44 CODE >989:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1D5 text44 CODE >991:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1E0 text44 CODE >992:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1E6 text44 CODE >995:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1EC text44 CODE >997:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1EF text44 CODE >999:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1F5 text44 CODE >1000:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1F6 text44 CODE >1002:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1FB text44 CODE >1003:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+20A text44 CODE >1005:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+20D text44 CODE >1006:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+225 text44 CODE >1011:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+22B text44 CODE >1013:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+23D text44 CODE >1015:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+254 text44 CODE >1017:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+25F text44 CODE >1018:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+265 text44 CODE >1021:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+26B text44 CODE >1023:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+26E text44 CODE >1025:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+280 text44 CODE >1027:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+286 text44 CODE >1028:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+287 text44 CODE >1030:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+28C text44 CODE >1031:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+29B text44 CODE >1032:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+2AA text44 CODE >1033:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+2AB text44 CODE >1036:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+2B0 text44 CODE >1037:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+2BF text44 CODE >1038:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+2CE text44 CODE >1040:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+2DD text44 CODE >1042:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+2E1 text44 CODE >1043:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+2E2 text44 CODE >1045:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+2E7 text44 CODE >1046:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+2F6 text44 CODE >1048:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+2F9 text44 CODE >1049:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+311 text44 CODE >1055:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+317 text44 CODE >1058:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+31D text44 CODE >1060:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+327 text44 CODE >1063:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+32A text44 CODE >1065:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+339 text44 CODE >1066:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+345 text44 CODE >1068:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+34F text44 CODE >1070:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+354 text44 CODE >1071:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+363 text44 CODE >1072:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+372 text44 CODE >1074:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+382 text44 CODE >1086:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1228 text43 CODE >719:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1228 text43 CODE >722:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1229 text43 CODE >723:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+122A text43 CODE >724:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+122E text43 CODE >727:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1235 text43 CODE >728:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+123C text43 CODE >731:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1241 text43 CODE >733:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1250 text43 CODE >734:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+125F text43 CODE >736:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+126D text43 CODE >739:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1272 text43 CODE >740:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1278 text43 CODE >741:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+E23 text42 CODE >8:D:\pic\sources\c90\common\sprcdiv.c
+E23 text42 CODE >26:D:\pic\sources\c90\common\sprcdiv.c
+E2A text42 CODE >27:D:\pic\sources\c90\common\sprcdiv.c
+E30 text42 CODE >28:D:\pic\sources\c90\common\sprcdiv.c
+E34 text42 CODE >29:D:\pic\sources\c90\common\sprcdiv.c
+E35 text42 CODE >33:D:\pic\sources\c90\common\sprcdiv.c
+E3A text42 CODE >35:D:\pic\sources\c90\common\sprcdiv.c
+E3F text42 CODE >37:D:\pic\sources\c90\common\sprcdiv.c
+E47 text42 CODE >40:D:\pic\sources\c90\common\sprcdiv.c
+E48 text42 CODE >42:D:\pic\sources\c90\common\sprcdiv.c
+E49 text42 CODE >43:D:\pic\sources\c90\common\sprcdiv.c
+E4A text42 CODE >46:D:\pic\sources\c90\common\sprcdiv.c
+E52 text42 CODE >49:D:\pic\sources\c90\common\sprcdiv.c
+E57 text42 CODE >50:D:\pic\sources\c90\common\sprcdiv.c
+E5D text42 CODE >51:D:\pic\sources\c90\common\sprcdiv.c
+E61 text42 CODE >52:D:\pic\sources\c90\common\sprcdiv.c
+E62 text42 CODE >56:D:\pic\sources\c90\common\sprcdiv.c
+E67 text42 CODE >58:D:\pic\sources\c90\common\sprcdiv.c
+E6C text42 CODE >60:D:\pic\sources\c90\common\sprcdiv.c
+E74 text42 CODE >63:D:\pic\sources\c90\common\sprcdiv.c
+E75 text42 CODE >65:D:\pic\sources\c90\common\sprcdiv.c
+E76 text42 CODE >66:D:\pic\sources\c90\common\sprcdiv.c
+E77 text42 CODE >69:D:\pic\sources\c90\common\sprcdiv.c
+E7F text42 CODE >70:D:\pic\sources\c90\common\sprcdiv.c
+E7F text42 CODE >75:D:\pic\sources\c90\common\sprcdiv.c
+E87 text42 CODE >76:D:\pic\sources\c90\common\sprcdiv.c
+E8F text42 CODE >77:D:\pic\sources\c90\common\sprcdiv.c
+E93 text42 CODE >78:D:\pic\sources\c90\common\sprcdiv.c
+E97 text42 CODE >79:D:\pic\sources\c90\common\sprcdiv.c
+EA0 text42 CODE >83:D:\pic\sources\c90\common\sprcdiv.c
+EA5 text42 CODE >84:D:\pic\sources\c90\common\sprcdiv.c
+EA5 text42 CODE >85:D:\pic\sources\c90\common\sprcdiv.c
+EAE text42 CODE >89:D:\pic\sources\c90\common\sprcdiv.c
+EC0 text42 CODE >92:D:\pic\sources\c90\common\sprcdiv.c
+EC8 text42 CODE >93:D:\pic\sources\c90\common\sprcdiv.c
+ED0 text42 CODE >94:D:\pic\sources\c90\common\sprcdiv.c
+ED8 text42 CODE >96:D:\pic\sources\c90\common\sprcdiv.c
+ED9 text42 CODE >97:D:\pic\sources\c90\common\sprcdiv.c
+EDA text42 CODE >100:D:\pic\sources\c90\common\sprcdiv.c
+EDF text42 CODE >101:D:\pic\sources\c90\common\sprcdiv.c
+EE8 text42 CODE >102:D:\pic\sources\c90\common\sprcdiv.c
+EF1 text42 CODE >103:D:\pic\sources\c90\common\sprcdiv.c
+EF5 text42 CODE >104:D:\pic\sources\c90\common\sprcdiv.c
+EF6 text42 CODE >106:D:\pic\sources\c90\common\sprcdiv.c
+EFF text42 CODE >112:D:\pic\sources\c90\common\sprcdiv.c
+F11 text42 CODE >115:D:\pic\sources\c90\common\sprcdiv.c
+F12 text42 CODE >116:D:\pic\sources\c90\common\sprcdiv.c
+F20 text42 CODE >118:D:\pic\sources\c90\common\sprcdiv.c
+F24 text42 CODE >97:D:\pic\sources\c90\common\sprcdiv.c
+F2A text42 CODE >122:D:\pic\sources\c90\common\sprcdiv.c
+F32 text42 CODE >123:D:\pic\sources\c90\common\sprcdiv.c
+F34 text42 CODE >128:D:\pic\sources\c90\common\sprcdiv.c
+F3D text42 CODE >129:D:\pic\sources\c90\common\sprcdiv.c
+F41 text42 CODE >130:D:\pic\sources\c90\common\sprcdiv.c
+F42 text42 CODE >132:D:\pic\sources\c90\common\sprcdiv.c
+F4B text42 CODE >133:D:\pic\sources\c90\common\sprcdiv.c
+F51 text42 CODE >127:D:\pic\sources\c90\common\sprcdiv.c
+F55 text42 CODE >139:D:\pic\sources\c90\common\sprcdiv.c
+F56 text42 CODE >140:D:\pic\sources\c90\common\sprcdiv.c
+F5A text42 CODE >141:D:\pic\sources\c90\common\sprcdiv.c
+F6E text42 CODE >142:D:\pic\sources\c90\common\sprcdiv.c
+F70 text42 CODE >143:D:\pic\sources\c90\common\sprcdiv.c
+F71 text42 CODE >144:D:\pic\sources\c90\common\sprcdiv.c
+F71 text42 CODE >145:D:\pic\sources\c90\common\sprcdiv.c
+F76 text42 CODE >150:D:\pic\sources\c90\common\sprcdiv.c
+F7B text42 CODE >151:D:\pic\sources\c90\common\sprcdiv.c
+F89 text42 CODE >152:D:\pic\sources\c90\common\sprcdiv.c
+F8D text42 CODE >153:D:\pic\sources\c90\common\sprcdiv.c
+FA6 text42 CODE >154:D:\pic\sources\c90\common\sprcdiv.c
+FAC text42 CODE >159:D:\pic\sources\c90\common\sprcdiv.c
+FB9 text42 CODE >160:D:\pic\sources\c90\common\sprcdiv.c
+FBF text42 CODE >161:D:\pic\sources\c90\common\sprcdiv.c
+FC7 text42 CODE >165:D:\pic\sources\c90\common\sprcdiv.c
+FD6 text42 CODE >166:D:\pic\sources\c90\common\sprcdiv.c
+FDA text42 CODE >167:D:\pic\sources\c90\common\sprcdiv.c
+FE2 text42 CODE >169:D:\pic\sources\c90\common\sprcdiv.c
+FE3 text42 CODE >170:D:\pic\sources\c90\common\sprcdiv.c
+FE3 text42 CODE >173:D:\pic\sources\c90\common\sprcdiv.c
+FE9 text42 CODE >175:D:\pic\sources\c90\common\sprcdiv.c
+FED text42 CODE >176:D:\pic\sources\c90\common\sprcdiv.c
+FEE text42 CODE >177:D:\pic\sources\c90\common\sprcdiv.c
+FEF text42 CODE >180:D:\pic\sources\c90\common\sprcdiv.c
+FF3 text42 CODE >181:D:\pic\sources\c90\common\sprcdiv.c
+FF3 text42 CODE >182:D:\pic\sources\c90\common\sprcdiv.c
+FFA text42 CODE >183:D:\pic\sources\c90\common\sprcdiv.c
+FFF text42 CODE >185:D:\pic\sources\c90\common\sprcdiv.c
+159A text41 CODE >43:D:\pic\sources\c90\common\fltol.c
+159A text41 CODE >47:D:\pic\sources\c90\common\fltol.c
+15A7 text41 CODE >48:D:\pic\sources\c90\common\fltol.c
+15B0 text41 CODE >49:D:\pic\sources\c90\common\fltol.c
+15C5 text41 CODE >50:D:\pic\sources\c90\common\fltol.c
+15C6 text41 CODE >51:D:\pic\sources\c90\common\fltol.c
+15CE text41 CODE >52:D:\pic\sources\c90\common\fltol.c
+15D0 text41 CODE >53:D:\pic\sources\c90\common\fltol.c
+15D4 text41 CODE >54:D:\pic\sources\c90\common\fltol.c
+15DC text41 CODE >57:D:\pic\sources\c90\common\fltol.c
+15E5 text41 CODE >58:D:\pic\sources\c90\common\fltol.c
+15EE text41 CODE >60:D:\pic\sources\c90\common\fltol.c
+15F5 text41 CODE >63:D:\pic\sources\c90\common\fltol.c
+15FE text41 CODE >64:D:\pic\sources\c90\common\fltol.c
+1600 text41 CODE >62:D:\pic\sources\c90\common\fltol.c
+1600 text41 CODE >65:D:\pic\sources\c90\common\fltol.c
+1605 text41 CODE >67:D:\pic\sources\c90\common\fltol.c
+160A text41 CODE >68:D:\pic\sources\c90\common\fltol.c
+1615 text41 CODE >70:D:\pic\sources\c90\common\fltol.c
+1FBA text40 CODE >5:D:\pic\sources\c90\common\lwdiv.c
+1FBA text40 CODE >13:D:\pic\sources\c90\common\lwdiv.c
+1FBE text40 CODE >14:D:\pic\sources\c90\common\lwdiv.c
+1FC4 text40 CODE >15:D:\pic\sources\c90\common\lwdiv.c
+1FC6 text40 CODE >16:D:\pic\sources\c90\common\lwdiv.c
+1FC7 text40 CODE >17:D:\pic\sources\c90\common\lwdiv.c
+1FCE text40 CODE >18:D:\pic\sources\c90\common\lwdiv.c
+1FD2 text40 CODE >16:D:\pic\sources\c90\common\lwdiv.c
+1FD6 text40 CODE >21:D:\pic\sources\c90\common\lwdiv.c
+1FDD text40 CODE >22:D:\pic\sources\c90\common\lwdiv.c
+1FE7 text40 CODE >23:D:\pic\sources\c90\common\lwdiv.c
+1FED text40 CODE >24:D:\pic\sources\c90\common\lwdiv.c
+1FEE text40 CODE >26:D:\pic\sources\c90\common\lwdiv.c
+1FF5 text40 CODE >27:D:\pic\sources\c90\common\lwdiv.c
+1FFB text40 CODE >29:D:\pic\sources\c90\common\lwdiv.c
+1FFF text40 CODE >30:D:\pic\sources\c90\common\lwdiv.c
+1F3C text39 CODE >5:D:\pic\sources\c90\common\lwmod.c
+1F3C text39 CODE >12:D:\pic\sources\c90\common\lwmod.c
+1F42 text39 CODE >13:D:\pic\sources\c90\common\lwmod.c
+1F46 text39 CODE >14:D:\pic\sources\c90\common\lwmod.c
+1F47 text39 CODE >15:D:\pic\sources\c90\common\lwmod.c
+1F4E text39 CODE >16:D:\pic\sources\c90\common\lwmod.c
+1F52 text39 CODE >14:D:\pic\sources\c90\common\lwmod.c
+1F56 text39 CODE >19:D:\pic\sources\c90\common\lwmod.c
+1F60 text39 CODE >20:D:\pic\sources\c90\common\lwmod.c
+1F66 text39 CODE >21:D:\pic\sources\c90\common\lwmod.c
+1F6D text39 CODE >22:D:\pic\sources\c90\common\lwmod.c
+1F73 text39 CODE >24:D:\pic\sources\c90\common\lwmod.c
+1F77 text39 CODE >25:D:\pic\sources\c90\common\lwmod.c
+1744 text38 CODE >10:D:\pic\sources\c90\common\xxtofl.c
+1747 text38 CODE >15:D:\pic\sources\c90\common\xxtofl.c
+1750 text38 CODE >16:D:\pic\sources\c90\common\xxtofl.c
+175F text38 CODE >17:D:\pic\sources\c90\common\xxtofl.c
+1760 text38 CODE >19:D:\pic\sources\c90\common\xxtofl.c
+1768 text38 CODE >20:D:\pic\sources\c90\common\xxtofl.c
+1768 text38 CODE >21:D:\pic\sources\c90\common\xxtofl.c
+1770 text38 CODE >22:D:\pic\sources\c90\common\xxtofl.c
+1779 text38 CODE >23:D:\pic\sources\c90\common\xxtofl.c
+177D text38 CODE >24:D:\pic\sources\c90\common\xxtofl.c
+177E text38 CODE >25:D:\pic\sources\c90\common\xxtofl.c
+1782 text38 CODE >26:D:\pic\sources\c90\common\xxtofl.c
+178B text38 CODE >24:D:\pic\sources\c90\common\xxtofl.c
+1792 text38 CODE >29:D:\pic\sources\c90\common\xxtofl.c
+1796 text38 CODE >30:D:\pic\sources\c90\common\xxtofl.c
+17A4 text38 CODE >31:D:\pic\sources\c90\common\xxtofl.c
+17AD text38 CODE >28:D:\pic\sources\c90\common\xxtofl.c
+17AD text38 CODE >32:D:\pic\sources\c90\common\xxtofl.c
+17B4 text38 CODE >34:D:\pic\sources\c90\common\xxtofl.c
+17B6 text38 CODE >35:D:\pic\sources\c90\common\xxtofl.c
+17BF text38 CODE >33:D:\pic\sources\c90\common\xxtofl.c
+17C9 text38 CODE >37:D:\pic\sources\c90\common\xxtofl.c
+17CD text38 CODE >38:D:\pic\sources\c90\common\xxtofl.c
+17D5 text38 CODE >39:D:\pic\sources\c90\common\xxtofl.c
+17D7 text38 CODE >40:D:\pic\sources\c90\common\xxtofl.c
+17ED text38 CODE >41:D:\pic\sources\c90\common\xxtofl.c
+17F6 text38 CODE >42:D:\pic\sources\c90\common\xxtofl.c
+17F7 text38 CODE >43:D:\pic\sources\c90\common\xxtofl.c
+17FF text38 CODE >44:D:\pic\sources\c90\common\xxtofl.c
+137B text37 CODE >43:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+137E text37 CODE >53:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+138F text37 CODE >54:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1397 text37 CODE >56:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+139B text37 CODE >58:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+13AB text37 CODE >59:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+13B3 text37 CODE >61:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+13B7 text37 CODE >63:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+13C8 text37 CODE >64:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+13D1 text37 CODE >65:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+13D2 text37 CODE >67:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+13DF text37 CODE >68:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1C85 text36 CODE >41:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1C86 text36 CODE >45:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1C8B text36 CODE >46:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1C8E text36 CODE >48:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1C93 text36 CODE >49:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1C99 text36 CODE >51:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1C9E text36 CODE >53:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1CA1 text36 CODE >54:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1CA2 text36 CODE >55:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1CA2 text36 CODE >57:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1CA5 text36 CODE >58:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1CA5 text36 CODE >60:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1CA6 text36 CODE >62:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1CA7 text36 CODE >63:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B7C text35 CODE >28:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B7C text35 CODE >30:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B81 text35 CODE >31:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1B86 text35 CODE >33:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1DEF text34 CODE >13:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1DF2 text34 CODE >17:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1DF7 text34 CODE >18:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1DFD text34 CODE >19:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1E05 text34 CODE >20:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1E0A text34 CODE >21:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1E10 text34 CODE >22:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1E1B text34 CODE >23:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1E20 text34 CODE >25:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1E23 text34 CODE >26:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1CFA text33 CODE >37:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1CFD text33 CODE >39:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1D0B text33 CODE >40:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1D19 text33 CODE >41:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1D28 text33 CODE >42:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1C42 text32 CODE >13:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\adc.c
+1C45 text32 CODE >18:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\adc.c
+1C51 text32 CODE >21:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\adc.c
+1C52 text32 CODE >23:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\adc.c
+1C56 text32 CODE >25:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\adc.c
+1C5E text32 CODE >27:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\adc.c
+1C62 text32 CODE >28:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\adc.c
+1320 text31 CODE >5:D:\pic\sources\c90\common\awmod.c
+1320 text31 CODE >12:D:\pic\sources\c90\common\awmod.c
+1323 text31 CODE >13:D:\pic\sources\c90\common\awmod.c
+1327 text31 CODE >14:D:\pic\sources\c90\common\awmod.c
+132C text31 CODE >15:D:\pic\sources\c90\common\awmod.c
+132E text31 CODE >17:D:\pic\sources\c90\common\awmod.c
+1332 text31 CODE >18:D:\pic\sources\c90\common\awmod.c
+1337 text31 CODE >19:D:\pic\sources\c90\common\awmod.c
+133D text31 CODE >20:D:\pic\sources\c90\common\awmod.c
+133F text31 CODE >21:D:\pic\sources\c90\common\awmod.c
+1340 text31 CODE >22:D:\pic\sources\c90\common\awmod.c
+1347 text31 CODE >23:D:\pic\sources\c90\common\awmod.c
+134B text31 CODE >21:D:\pic\sources\c90\common\awmod.c
+134F text31 CODE >26:D:\pic\sources\c90\common\awmod.c
+1359 text31 CODE >27:D:\pic\sources\c90\common\awmod.c
+135F text31 CODE >28:D:\pic\sources\c90\common\awmod.c
+1366 text31 CODE >29:D:\pic\sources\c90\common\awmod.c
+136C text31 CODE >31:D:\pic\sources\c90\common\awmod.c
+1371 text31 CODE >32:D:\pic\sources\c90\common\awmod.c
+1376 text31 CODE >33:D:\pic\sources\c90\common\awmod.c
+137A text31 CODE >34:D:\pic\sources\c90\common\awmod.c
+7E9 text30 CODE >4:D:\pic\sources\c90\common\Umul8.c
+7EA text30 CODE >6:D:\pic\sources\c90\common\Umul8.c
+7EB text30 CODE >43:D:\pic\sources\c90\common\Umul8.c
+7EF text30 CODE >44:D:\pic\sources\c90\common\Umul8.c
+7F3 text30 CODE >45:D:\pic\sources\c90\common\Umul8.c
+7F5 text30 CODE >46:D:\pic\sources\c90\common\Umul8.c
+7F7 text30 CODE >47:D:\pic\sources\c90\common\Umul8.c
+7FC text30 CODE >50:D:\pic\sources\c90\common\Umul8.c
+7FD text30 CODE >51:D:\pic\sources\c90\common\Umul8.c
+1BD1 text29 CODE >459:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1BD2 text29 CODE >461:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1BE3 text29 CODE >462:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1BEB text29 CODE >463:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+814 text28 CODE >466:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+817 text28 CODE >474:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+824 text28 CODE >475:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+82A text28 CODE >477:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+837 text28 CODE >478:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+83D text28 CODE >480:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+84B text28 CODE >483:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+859 text28 CODE >484:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+86D text28 CODE >487:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+874 text28 CODE >488:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+87A text28 CODE >491:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+889 text28 CODE >494:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+88A text28 CODE >496:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+899 text28 CODE >497:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+8A5 text28 CODE >500:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+8BB text28 CODE >502:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+8C1 text28 CODE >504:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+8C5 text28 CODE >508:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+8CF text28 CODE >509:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+8DB text28 CODE >510:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+9BB text27 CODE >73:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+9BE text27 CODE >75:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+9CB text27 CODE >78:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+9D1 text27 CODE >79:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+9D7 text27 CODE >84:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+9DF text27 CODE >86:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+9E6 text27 CODE >88:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+9EA text27 CODE >89:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+9F2 text27 CODE >90:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+9F6 text27 CODE >91:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+9F7 text27 CODE >92:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A04 text27 CODE >94:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A0C text27 CODE >95:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A10 text27 CODE >96:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A17 text27 CODE >102:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A1D text27 CODE >104:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A25 text27 CODE >110:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A32 text27 CODE >112:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A3A text27 CODE >113:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A43 text27 CODE >118:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A49 text27 CODE >120:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A4D text27 CODE >121:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A56 text27 CODE >127:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A6D text27 CODE >131:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+A79 text27 CODE >134:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+AB7 text27 CODE >137:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+ACD text27 CODE >138:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+AE3 text27 CODE >139:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+AE4 text27 CODE >141:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+AEB text27 CODE >143:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B01 text27 CODE >145:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B04 text27 CODE >149:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B11 text27 CODE >152:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1448 text26 CODE >5:D:\pic\sources\c90\common\awdiv.c
+1448 text26 CODE >13:D:\pic\sources\c90\common\awdiv.c
+144B text26 CODE >14:D:\pic\sources\c90\common\awdiv.c
+144F text26 CODE >15:D:\pic\sources\c90\common\awdiv.c
+1454 text26 CODE >16:D:\pic\sources\c90\common\awdiv.c
+1456 text26 CODE >18:D:\pic\sources\c90\common\awdiv.c
+145A text26 CODE >19:D:\pic\sources\c90\common\awdiv.c
+145F text26 CODE >20:D:\pic\sources\c90\common\awdiv.c
+1463 text26 CODE >22:D:\pic\sources\c90\common\awdiv.c
+1465 text26 CODE >23:D:\pic\sources\c90\common\awdiv.c
+146B text26 CODE >24:D:\pic\sources\c90\common\awdiv.c
+146D text26 CODE >25:D:\pic\sources\c90\common\awdiv.c
+146E text26 CODE >26:D:\pic\sources\c90\common\awdiv.c
+1475 text26 CODE >27:D:\pic\sources\c90\common\awdiv.c
+1479 text26 CODE >25:D:\pic\sources\c90\common\awdiv.c
+147D text26 CODE >30:D:\pic\sources\c90\common\awdiv.c
+1484 text26 CODE >31:D:\pic\sources\c90\common\awdiv.c
+148E text26 CODE >32:D:\pic\sources\c90\common\awdiv.c
+1494 text26 CODE >33:D:\pic\sources\c90\common\awdiv.c
+1495 text26 CODE >35:D:\pic\sources\c90\common\awdiv.c
+149C text26 CODE >36:D:\pic\sources\c90\common\awdiv.c
+14A2 text26 CODE >38:D:\pic\sources\c90\common\awdiv.c
+14A7 text26 CODE >39:D:\pic\sources\c90\common\awdiv.c
+14AC text26 CODE >40:D:\pic\sources\c90\common\awdiv.c
+14B0 text26 CODE >41:D:\pic\sources\c90\common\awdiv.c
+1E24 text25 CODE >18:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1E27 text25 CODE >22:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1E2C text25 CODE >23:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1E32 text25 CODE >24:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1E3A text25 CODE >25:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1E3F text25 CODE >26:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1E45 text25 CODE >27:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1E50 text25 CODE >28:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1E55 text25 CODE >30:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+1E58 text25 CODE >31:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\external_eeprom.c
+12CC text24 CODE >513:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+12CF text24 CODE >519:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+12F2 text24 CODE >521:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1301 text24 CODE >523:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1302 text24 CODE >525:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1312 text24 CODE >526:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+131C text24 CODE >528:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+131F text24 CODE >529:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1B67 text23 CODE >21:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1B68 text23 CODE >23:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1B68 text23 CODE >26:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1B6E text23 CODE >28:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1B70 text23 CODE >29:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1CA8 text22 CODE >31:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1CA8 text22 CODE >33:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1CA9 text22 CODE >35:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1CBD text22 CODE >33:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1CCD text22 CODE >37:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+B12 text21 CODE >623:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B12 text21 CODE >631:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B17 text21 CODE >633:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B19 text21 CODE >635:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B1E text21 CODE >638:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B23 text21 CODE >640:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B32 text21 CODE >641:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B41 text21 CODE >643:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B50 text21 CODE >645:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B55 text21 CODE >647:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B56 text21 CODE >648:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B5D text21 CODE >654:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B6C text21 CODE >657:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B75 text21 CODE >658:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B7E text21 CODE >659:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B87 text21 CODE >662:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B8B text21 CODE >664:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+B91 text21 CODE >667:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+BAA text21 CODE >668:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+BC3 text21 CODE >669:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+BC9 text21 CODE >672:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+BD1 text21 CODE >673:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+BD9 text21 CODE >674:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+BDF text21 CODE >675:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+BE7 text21 CODE >676:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+BEF text21 CODE >677:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+BF5 text21 CODE >678:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+BFD text21 CODE >679:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C05 text21 CODE >681:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C0E text21 CODE >684:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C16 text21 CODE >685:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C1E text21 CODE >687:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C27 text21 CODE >690:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C2F text21 CODE >691:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C37 text21 CODE >693:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C40 text21 CODE >694:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C4C text21 CODE >697:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C55 text21 CODE >699:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C5E text21 CODE >702:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C63 text21 CODE >704:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C72 text21 CODE >705:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C81 text21 CODE >707:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C90 text21 CODE >715:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1B3E text20 CODE >4:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\adc.c
+1B3E text20 CODE >7:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\adc.c
+1B41 text20 CODE >10:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\adc.c
+1B44 text20 CODE >11:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\adc.c
+14B1 text19 CODE >21:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+14B1 text19 CODE >24:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+14BC text19 CODE >27:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+14C3 text19 CODE >28:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+14CE text19 CODE >29:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+14D5 text19 CODE >30:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+14DC text19 CODE >31:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+14E3 text19 CODE >32:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+14E6 text19 CODE >34:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+14ED text19 CODE >35:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+14F4 text19 CODE >36:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+14FB text19 CODE >37:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1502 text19 CODE >38:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1509 text19 CODE >39:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1513 text19 CODE >40:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+151A text19 CODE >41:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1521 text19 CODE >42:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1B87 text18 CODE >44:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1B87 text18 CODE >47:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1B8A text18 CODE >50:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1B8B text18 CODE >51:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1B8C text18 CODE >53:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1B91 text18 CODE >54:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\clcd.c
+1B38 text17 CODE >4:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\digital_keypad.c
+1B38 text17 CODE >7:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\digital_keypad.c
+1B3D text17 CODE >8:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\digital_keypad.c
+1C24 text16 CODE >28:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1C25 text16 CODE >30:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1C2A text16 CODE >31:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1C30 text16 CODE >32:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1C36 text16 CODE >33:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1C3C text16 CODE >34:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1C41 text16 CODE >35:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1BEC text15 CODE >4:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1BEC text15 CODE >8:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1BF7 text15 CODE >9:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1BFC text15 CODE >10:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1C06 text15 CODE >11:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\ds1307.c
+1F01 text14 CODE >404:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1F01 text14 CODE >406:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1F0C text14 CODE >407:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1F17 text14 CODE >409:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1F23 text14 CODE >411:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1F24 text14 CODE >412:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1F25 text14 CODE >414:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1F2F text14 CODE >415:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1F3B text14 CODE >417:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+13E0 text13 CODE >5:D:\pic\sources\c90\common\__lldiv.c
+13E0 text13 CODE >13:D:\pic\sources\c90\common\__lldiv.c
+13EA text13 CODE >14:D:\pic\sources\c90\common\__lldiv.c
+13F2 text13 CODE >15:D:\pic\sources\c90\common\__lldiv.c
+13F4 text13 CODE >16:D:\pic\sources\c90\common\__lldiv.c
+13F5 text13 CODE >17:D:\pic\sources\c90\common\__lldiv.c
+13FE text13 CODE >18:D:\pic\sources\c90\common\__lldiv.c
+1402 text13 CODE >16:D:\pic\sources\c90\common\__lldiv.c
+1406 text13 CODE >21:D:\pic\sources\c90\common\__lldiv.c
+140F text13 CODE >22:D:\pic\sources\c90\common\__lldiv.c
+1421 text13 CODE >23:D:\pic\sources\c90\common\__lldiv.c
+142F text13 CODE >24:D:\pic\sources\c90\common\__lldiv.c
+1430 text13 CODE >26:D:\pic\sources\c90\common\__lldiv.c
+1439 text13 CODE >27:D:\pic\sources\c90\common\__lldiv.c
+143F text13 CODE >29:D:\pic\sources\c90\common\__lldiv.c
+1447 text13 CODE >30:D:\pic\sources\c90\common\__lldiv.c
+1DBB text12 CODE >4:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1DBB text12 CODE >7:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1DBE text12 CODE >10:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1DEB text12 CODE >13:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1DEE text12 CODE >14:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\i2c.c
+1522 text11 CODE >419:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1522 text11 CODE >424:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+152D text11 CODE >426:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1533 text11 CODE >429:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1534 text11 CODE >431:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1544 text11 CODE >432:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+154E text11 CODE >434:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1551 text11 CODE >435:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1552 text11 CODE >439:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1558 text11 CODE >440:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1560 text11 CODE >441:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1568 text11 CODE >442:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1570 text11 CODE >443:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1571 text11 CODE >446:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1574 text11 CODE >448:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1583 text11 CODE >450:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+158F text11 CODE >453:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1599 text11 CODE >456:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1BAB text10 CODE >16:D:\space/MC/timers.X/timers.c
+1BAB text10 CODE >19:D:\space/MC/timers.X/timers.c
+1BAF text10 CODE >22:D:\space/MC/timers.X/timers.c
+1BB2 text10 CODE >24:D:\space/MC/timers.X/timers.c
+1BB5 text10 CODE >28:D:\space/MC/timers.X/timers.c
+1BB8 text10 CODE >29:D:\space/MC/timers.X/timers.c
+1BB9 text10 CODE >31:D:\space/MC/timers.X/timers.c
+1BBA text10 CODE >32:D:\space/MC/timers.X/timers.c
+1BBB text10 CODE >34:D:\space/MC/timers.X/timers.c
+1E8F text9 CODE >4:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1E8F text9 CODE >7:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1E92 text9 CODE >10:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1EBF text9 CODE >13:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1EC1 text9 CODE >16:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1EC5 text9 CODE >17:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\uart.c
+1F78 text8 CODE >18:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1F78 text8 CODE >20:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1F7D text8 CODE >21:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1F82 text8 CODE >22:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1F87 text8 CODE >23:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1F96 text8 CODE >24:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1FA5 text8 CODE >25:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1FAA text8 CODE >26:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1FAF text8 CODE >27:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1FB4 text8 CODE >28:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1FB9 text8 CODE >30:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+11DE text7 CODE >8:D:\pic\sources\c90\common\strncpy.c
+11E1 text7 CODE >18:D:\pic\sources\c90\common\strncpy.c
+11E5 text7 CODE >19:D:\pic\sources\c90\common\strncpy.c
+11E6 text7 CODE >20:D:\pic\sources\c90\common\strncpy.c
+11EC text7 CODE >21:D:\pic\sources\c90\common\strncpy.c
+120A text7 CODE >19:D:\pic\sources\c90\common\strncpy.c
+1211 text7 CODE >25:D:\pic\sources\c90\common\strncpy.c
+1219 text7 CODE >24:D:\pic\sources\c90\common\strncpy.c
+1227 text7 CODE >27:D:\pic\sources\c90\common\strncpy.c
+C91 text6 CODE >298:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+C94 text6 CODE >303:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+CAB text6 CODE >313:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+CAE text6 CODE >315:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+CC5 text6 CODE >316:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+CDA text6 CODE >319:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+CDF text6 CODE >321:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+CE4 text6 CODE >322:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+CE8 text6 CODE >323:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+CE9 text6 CODE >324:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+CED text6 CODE >328:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+CFD text6 CODE >330:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D01 text6 CODE >331:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D05 text6 CODE >332:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D06 text6 CODE >335:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D15 text6 CODE >337:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D18 text6 CODE >342:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D20 text6 CODE >344:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D25 text6 CODE >345:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D28 text6 CODE >346:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D2A text6 CODE >351:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D31 text6 CODE >356:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D32 text6 CODE >357:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D36 text6 CODE >358:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D37 text6 CODE >361:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D38 text6 CODE >362:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D3C text6 CODE >363:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D3D text6 CODE >366:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D3E text6 CODE >367:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D42 text6 CODE >368:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D43 text6 CODE >370:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D44 text6 CODE >371:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D48 text6 CODE >372:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D49 text6 CODE >375:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D4A text6 CODE >376:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D4E text6 CODE >377:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D4F text6 CODE >378:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D6A text6 CODE >381:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D6A text6 CODE >384:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D6F text6 CODE >386:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D8C text6 CODE >389:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+D91 text6 CODE >392:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+DAC text6 CODE >393:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+DD1 text6 CODE >395:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+DE9 text6 CODE >396:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+E04 text6 CODE >398:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+E13 text6 CODE >399:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+E22 text6 CODE >401:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+5CE text5 CODE >156:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+5D1 text5 CODE >167:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+5D6 text5 CODE >169:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+5DB text5 CODE >170:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+5EA text5 CODE >172:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+5ED text5 CODE >174:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+5F2 text5 CODE >175:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+5FD text5 CODE >176:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+609 text5 CODE >178:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+60A text5 CODE >179:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+60C text5 CODE >180:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+60D text5 CODE >181:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+611 text5 CODE >184:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+618 text5 CODE >186:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+61D text5 CODE >187:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+620 text5 CODE >188:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+622 text5 CODE >192:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+634 text5 CODE >194:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+64B text5 CODE >196:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+656 text5 CODE >197:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+65C text5 CODE >199:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+660 text5 CODE >200:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+663 text5 CODE >204:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+669 text5 CODE >206:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+66C text5 CODE >209:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+67E text5 CODE >211:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+683 text5 CODE >212:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+692 text5 CODE >214:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+698 text5 CODE >215:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+699 text5 CODE >216:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+69B text5 CODE >221:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+69F text5 CODE >223:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+6A4 text5 CODE >225:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+6AB text5 CODE >227:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+6B8 text5 CODE >228:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+6C7 text5 CODE >229:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+6D4 text5 CODE >231:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+6E3 text5 CODE >233:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+6E8 text5 CODE >234:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+6F7 text5 CODE >236:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+6FA text5 CODE >238:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+705 text5 CODE >239:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+711 text5 CODE >241:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+712 text5 CODE >242:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+716 text5 CODE >243:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+719 text5 CODE >244:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+71A text5 CODE >247:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+71E text5 CODE >248:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+71F text5 CODE >250:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+720 text5 CODE >251:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+721 text5 CODE >252:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+722 text5 CODE >254:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+723 text5 CODE >256:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+730 text5 CODE >257:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+73F text5 CODE >258:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+759 text5 CODE >259:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+773 text5 CODE >260:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+77F text5 CODE >254:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+786 text5 CODE >263:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+78B text5 CODE >264:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+78E text5 CODE >265:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+78F text5 CODE >266:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+794 text5 CODE >274:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+79A text5 CODE >276:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+7AB text5 CODE >278:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+7AD text5 CODE >279:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+7B9 text5 CODE >281:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+7D2 text5 CODE >286:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+7DA text5 CODE >288:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+7DF text5 CODE >289:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+7E2 text5 CODE >290:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+7E3 text5 CODE >291:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+7E4 text5 CODE >292:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+7E8 text5 CODE >294:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1D29 text4 CODE >10:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\digital_keypad.c
+1D2A text4 CODE >14:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\digital_keypad.c
+1D2F text4 CODE >16:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\digital_keypad.c
+1D34 text4 CODE >20:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\digital_keypad.c
+1D46 text4 CODE >22:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\digital_keypad.c
+1D48 text4 CODE >26:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\digital_keypad.c
+1D52 text4 CODE >28:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\digital_keypad.c
+1D56 text4 CODE >32:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\digital_keypad.c
+1D57 text4 CODE >33:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\digital_keypad.c
+383 text3 CODE >747:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+386 text3 CODE >758:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+39C text3 CODE >760:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+3B4 text3 CODE >761:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+3CA text3 CODE >764:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+3D1 text3 CODE >766:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+3D7 text3 CODE >770:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+3E8 text3 CODE >771:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+3F1 text3 CODE >773:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+402 text3 CODE >774:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+40B text3 CODE >776:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+41C text3 CODE >777:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+425 text3 CODE >779:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+428 text3 CODE >780:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+429 text3 CODE >781:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+42D text3 CODE >783:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+432 text3 CODE >787:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+43A text3 CODE >789:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+43F text3 CODE >791:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+442 text3 CODE >792:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+445 text3 CODE >794:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+44A text3 CODE >799:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+450 text3 CODE >801:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+46C text3 CODE >803:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+488 text3 CODE >805:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+4A4 text3 CODE >807:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+4A9 text3 CODE >809:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+4B8 text3 CODE >810:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+4C7 text3 CODE >812:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+4D6 text3 CODE >814:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+4DB text3 CODE >816:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+4DE text3 CODE >817:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+4E1 text3 CODE >818:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+4E6 text3 CODE >824:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+4ED text3 CODE >829:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+4F1 text3 CODE >830:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+4F2 text3 CODE >833:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+50B text3 CODE >834:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+50C text3 CODE >838:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+510 text3 CODE >839:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+511 text3 CODE >843:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+515 text3 CODE >844:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+516 text3 CODE >845:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+532 text3 CODE >847:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+53C text3 CODE >849:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+543 text3 CODE >850:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+544 text3 CODE >853:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+548 text3 CODE >857:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+55B text3 CODE >859:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+55D text3 CODE >864:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+563 text3 CODE >866:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+567 text3 CODE >868:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+56D text3 CODE >870:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+56E text3 CODE >872:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+56E text3 CODE >875:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+570 text3 CODE >877:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+57F text3 CODE >878:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+589 text3 CODE >881:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+593 text3 CODE >883:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+598 text3 CODE >885:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+5A2 text3 CODE >888:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+5AF text3 CODE >889:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+5BE text3 CODE >891:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+5CD text3 CODE >892:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+8DC text2 CODE >531:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+8DF text2 CODE >533:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+8F5 text2 CODE >534:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+90B text2 CODE >536:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+910 text2 CODE >538:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+927 text2 CODE >539:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+93E text2 CODE >541:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+946 text2 CODE >542:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+94E text2 CODE >543:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+956 text2 CODE >544:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+95E text2 CODE >545:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+966 text2 CODE >546:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+96E text2 CODE >547:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+976 text2 CODE >548:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+97E text2 CODE >550:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+986 text2 CODE >551:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+98E text2 CODE >553:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+996 text2 CODE >554:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+99E text2 CODE >556:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+9AB text2 CODE >557:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+9BA text2 CODE >558:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1697 text1 CODE >560:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+169A text1 CODE >565:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+169F text1 CODE >567:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16A4 text1 CODE >569:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16A7 text1 CODE >570:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16A9 text1 CODE >572:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16AE text1 CODE >574:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16BB text1 CODE >575:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16CB text1 CODE >579:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16D1 text1 CODE >580:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16D7 text1 CODE >583:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16DC text1 CODE >585:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16E4 text1 CODE >587:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16E9 text1 CODE >588:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16EC text1 CODE >589:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16F1 text1 CODE >595:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16F9 text1 CODE >597:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+16FE text1 CODE >599:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1700 text1 CODE >600:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1706 text1 CODE >601:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+170F text1 CODE >604:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1715 text1 CODE >606:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1727 text1 CODE >608:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+172D text1 CODE >609:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1733 text1 CODE >610:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+173C text1 CODE >613:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1743 text1 CODE >619:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\dashboard.c
+1616 maintext CODE >33:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1616 maintext CODE >34:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+161B maintext CODE >38:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1626 maintext CODE >40:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+162B maintext CODE >42:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1631 maintext CODE >44:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1633 maintext CODE >45:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1634 maintext CODE >48:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+163B maintext CODE >51:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1640 maintext CODE >53:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1646 maintext CODE >54:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1647 maintext CODE >55:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+164D maintext CODE >57:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1653 maintext CODE >58:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1654 maintext CODE >59:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+165A maintext CODE >61:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1660 maintext CODE >62:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1661 maintext CODE >63:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1667 maintext CODE >65:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+166C maintext CODE >66:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+166D maintext CODE >67:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1673 maintext CODE >69:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1678 maintext CODE >70:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1679 maintext CODE >71:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+167F maintext CODE >73:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1685 maintext CODE >74:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1686 maintext CODE >75:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+168C maintext CODE >77:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1693 maintext CODE >78:D:\space\projects\CAR_BLACK_BOX\25014_Car_Black__Box.X\25014_Car_Black__Box.X\25014_Car_Black_Box.X\main.c
+1B4D clrtext CODE >2920:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+1B4D clrtext CODE >2921:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+1B4E clrtext CODE >2922:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+1B4E clrtext CODE >2923:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+1B4F clrtext CODE >2924:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+1B50 clrtext CODE >2925:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+1B51 clrtext CODE >2926:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+1B52 clrtext CODE >2927:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+1B53 clrtext CODE >2928:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+1B54 clrtext CODE >2929:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+801 inittext CODE >2842:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+801 inittext CODE >2843:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+802 inittext CODE >2844:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+803 inittext CODE >2845:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+804 inittext CODE >2846:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+805 inittext CODE >2853:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+805 inittext CODE >2854:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+80A inittext CODE >2855:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+80B inittext CODE >2856:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+80C inittext CODE >2857:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+80D inittext CODE >2858:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+80E inittext CODE >2859:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+80F inittext CODE >2860:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+810 inittext CODE >2861:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+811 inittext CODE >2862:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+812 inittext CODE >2863:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+813 inittext CODE >2864:C:\Users\sathe\AppData\Local\Temp\s8q8.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+___awdiv@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_clear_clcd 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+___lwmod@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__LdataBANK2 0 0 ABS 0 dataBANK2 -
+__LdataBANK3 0 0 ABS 0 dataBANK3 -
+change_password@i 56 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+change_password@j 2F 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__Hspace_0 2000 0 ABS 0 - -
+__Hspace_1 1E3 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+__HidataBANK2 0 0 ABS 0 idataBANK2 -
+__HidataBANK3 0 0 ABS 0 idataBANK3 -
+_operation 64 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_display_log 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_init_adc 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_init_i2c 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+strncpy@cp 24 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+strncpy@to 23 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_i2c_read 390A 0 CODE 0 text36 dist/default/production\25014_Car_Black_Box.X.production.o
+_i2c_stop 36BC 0 CODE 0 text47 dist/default/production\25014_Car_Black_Box.X.production.o
+_GO FA 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__Lstringtext 0 0 ABS 0 stringtext -
+__Hstrings 0 0 ABS 0 strings -
+read_log@index 27 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_ADFM 4FF 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_ADON F8 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_PEIE 5E 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_RCEN 48B 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_R_nW 4A2 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_SPEN C7 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_T0CS 40D 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_TMR0 1 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_TMR2 11 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_TXIF 64 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\sathe\AppData\Local\Temp\s8q8.o
+_main 2C2C 0 CODE 0 maintext dist/default/production\25014_Car_Black_Box.X.production.o
+_menu 1922 0 CODE 0 text6 dist/default/production\25014_Car_Black_Box.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_i2c_wait_for_idle 3756 0 CODE 0 text49 dist/default/production\25014_Car_Black_Box.X.production.o
+start 18 0 CODE 0 init C:\Users\sathe\AppData\Local\Temp\s8q8.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_i2c_read 3950 0 CODE 0 text36 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_i2c_stop 36CE 0 CODE 0 text47 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of___fldiv 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of___fltol 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_eventcount BB 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_menu 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of___lldiv 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+store_event@clock 35 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+store_event@event 22 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+display_time@time 25 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+store_event@speed 24 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_i2c_rep_start 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+change_password@key 2E 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_read_ds1307 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__LidataBANK2 0 0 ABS 0 idataBANK2 -
+__LidataBANK3 0 0 ABS 0 idataBANK3 -
+__size_of_init_timer2 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_init_digital_keypad 367C 0 CODE 0 text17 dist/default/production\25014_Car_Black_Box.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+password@blink_count B9 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+password@blink_state 5E 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+get_time@clock_reg 22 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+read_digital_keypad@mode 74 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+read_digital_keypad@once E1 0 BANK1 1 dataBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\sathe\AppData\Local\Temp\s8q8.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\sathe\AppData\Local\Temp\s8q8.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\sathe\AppData\Local\Temp\s8q8.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\sathe\AppData\Local\Temp\s8q8.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\sathe\AppData\Local\Temp\s8q8.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\sathe\AppData\Local\Temp\s8q8.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+___bmul@multiplicand 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+_init_adc 367C 0 CODE 0 text20 dist/default/production\25014_Car_Black_Box.X.production.o
+_init_i2c 3B76 0 CODE 0 text12 dist/default/production\25014_Car_Black_Box.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_log_count 79 0 COMMON 1 bssCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+_read_external_eeprom 3C48 0 CODE 0 text25 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_i2c_rep_start 370E 0 CODE 0 text35 dist/default/production\25014_Car_Black_Box.X.production.o
+___awdiv@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_init_adc 368A 0 CODE 0 text20 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_init_i2c 3BDE 0 CODE 0 text12 dist/default/production\25014_Car_Black_Box.X.production.o
+_menu$196 13C 0 BANK2 1 cstackBANK2 dist/default/production\25014_Car_Black_Box.X.production.o
+_menu$197 13E 0 BANK2 1 cstackBANK2 dist/default/production\25014_Car_Black_Box.X.production.o
+_menu$198 140 0 BANK2 1 cstackBANK2 dist/default/production\25014_Car_Black_Box.X.production.o
+read_adc@channel 20 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_write_ds1307 3848 0 CODE 0 text16 dist/default/production\25014_Car_Black_Box.X.production.o
+_log_head 7A 0 COMMON 1 bssCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+menu@F1043 1D9 0 BANK3 1 dataBANK3 dist/default/production\25014_Car_Black_Box.X.production.o
+menu@F1047 1A2 0 BANK3 1 dataBANK3 dist/default/production\25014_Car_Black_Box.X.production.o
+menu@F1049 156 0 BANK2 1 dataBANK2 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_init_password 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_set_time$270 43 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_ADCON0 1F 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_ADRESH 1E 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_ADRESL 9E 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+menu@line1 110 0 BANK2 1 cstackBANK2 dist/default/production\25014_Car_Black_Box.X.production.o
+menu@line2 121 0 BANK2 1 cstackBANK2 dist/default/production\25014_Car_Black_Box.X.production.o
+___awdiv@dividend 75 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_write_external_eeprom 3B10 0 CODE 0 text45 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of___bmul FFC 0 CODE 0 text30 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_dashboard 1624 0 CODE 0 text27 dist/default/production\25014_Car_Black_Box.X.production.o
+store_event@address 34 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_store_event 1028 0 CODE 0 text28 dist/default/production\25014_Car_Black_Box.X.production.o
+_password$171 28 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_password$178 2A 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+password@user_password D0 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_dashboard 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of_i2c_start 36BC 0 CODE 0 text48 dist/default/production\25014_Car_Black_Box.X.production.o
+___fldiv@aexp 43 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+___fldiv@bexp 42 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_i2c_write 36F8 0 CODE 0 text46 dist/default/production\25014_Car_Black_Box.X.production.o
+___fldiv@sign 3B 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+___bmul@multiplier 76 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+_i2c_wait_for_idle 373C 0 CODE 0 text49 dist/default/production\25014_Car_Black_Box.X.production.o
+___awdiv@divisor 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_i2c_start 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+___lwmod@divisor 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_i2c_write 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of___awdiv 2962 0 CODE 0 text26 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of___awmod 26F6 0 CODE 0 text31 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of___fldiv 2000 0 CODE 0 text42 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of___fltol 2C2C 0 CODE 0 text41 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of___lldiv 2890 0 CODE 0 text13 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of___lwdiv 4000 0 CODE 0 text40 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of___lwmod 3EF0 0 CODE 0 text39 dist/default/production\25014_Car_Black_Box.X.production.o
+_write_external_eeprom 3AB0 0 CODE 0 text45 dist/default/production\25014_Car_Black_Box.X.production.o
+_adc_val BD 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_init_password 2B34 0 CODE 0 text11 dist/default/production\25014_Car_Black_Box.X.production.o
+read_log@address 29 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+?_strcmp 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\sathe\AppData\Local\Temp\s8q8.o
+___stacklo 0 0 ABS 0 - C:\Users\sathe\AppData\Local\Temp\s8q8.o
+__size_of_strncpy 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_init_config 3EF0 0 CODE 0 text8 dist/default/production\25014_Car_Black_Box.X.production.o
+set_time@selected 59 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_write_ds1307 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+set_time@clock_reg 46 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_dashboard 1376 0 CODE 0 text27 dist/default/production\25014_Car_Black_Box.X.production.o
+_init_ds1307 37D8 0 CODE 0 text15 dist/default/production\25014_Car_Black_Box.X.production.o
+___lwdiv@quotient 21 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_change_password$281 28 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_change_password$286 2A 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_change_password$288 2C 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+___fldiv@a 2A 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+___fldiv@b 2E 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_read_digital_keypad 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_i2c_start 36AA 0 CODE 0 text48 dist/default/production\25014_Car_Black_Box.X.production.o
+_init_display_controller 2962 0 CODE 0 text19 dist/default/production\25014_Car_Black_Box.X.production.o
+_i2c_write 36E2 0 CODE 0 text46 dist/default/production\25014_Car_Black_Box.X.production.o
+_original_password E2 0 BANK1 1 dataBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+___lwmod@dividend 75 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+___lldiv@counter 2C 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_init_display_controller 2A44 0 CODE 0 text19 dist/default/production\25014_Car_Black_Box.X.production.o
+start_initialization 1E 0 CODE 0 cinit dist/default/production\25014_Car_Black_Box.X.production.o
+menu@selected 5C 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+change_password@screen_started BF 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+_bcd_to_ascii 37A2 0 CODE 0 text29 dist/default/production\25014_Car_Black_Box.X.production.o
+change_password@new_password C6 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+_ACKSTAT 48E 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+___lldiv@dividend 24 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_write_ds1307 3884 0 CODE 0 text16 dist/default/production\25014_Car_Black_Box.X.production.o
+_display_log 11B8 0 CODE 0 text2 dist/default/production\25014_Car_Black_Box.X.production.o
+set_time@max_value 45 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+clear_ram0 369A 0 CODE 0 clrtext dist/default/production\25014_Car_Black_Box.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__pcstackBANK2 110 0 BANK2 1 cstackBANK2 dist/default/production\25014_Car_Black_Box.X.production.o
+_SSPADD 93 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_SSPBUF 13 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+download_log@i 2E 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_TMR0IE 5D 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_TMR0IF 5A 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_TMR2IE 461 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_TMR2IF 61 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_TMR2ON 92 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_TRISE1 449 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_TRISE2 44A 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+store_event@log 28 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+change_password@current_password CB 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\sathe\AppData\Local\Temp\s8q8.o
+_read_digital_keypad 3A52 0 CODE 0 text4 dist/default/production\25014_Car_Black_Box.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit B8 0 CODE 0 cinit -
+__end_of_strcmp 39F4 0 CODE 0 text51 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_strcpy 3848 0 CODE 0 text50 dist/default/production\25014_Car_Black_Box.X.production.o
+__Hstack 0 0 STACK 2 stack -
+__stringbase 3024 0 STRING 0 strings dist/default/production\25014_Car_Black_Box.X.production.o
+___lwdiv@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_init_event_log 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of___xxtofl 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_bcd_to_ascii 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+___xxtofl@arg 26 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+___xxtofl@exp 25 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+___xxtofl@val 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+read_log@slot 28 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_read_ds1307 3BDE 0 CODE 0 text34 dist/default/production\25014_Car_Black_Box.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+_init_timer2 3756 0 CODE 0 text10 dist/default/production\25014_Car_Black_Box.X.production.o
+read_ds1307@addr 20 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+read_ds1307@data 21 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 1E 0 CODE 0 cinit -
+read_adc@adc_reg_val 21 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_display_time 26F6 0 CODE 0 text37 dist/default/production\25014_Car_Black_Box.X.production.o
+_clcd_print 3B10 0 CODE 0 text54 dist/default/production\25014_Car_Black_Box.X.production.o
+_clcd_putch 3778 0 CODE 0 text53 dist/default/production\25014_Car_Black_Box.X.production.o
+__Lstack 0 0 STACK 2 stack -
+_clcd_write 3CB2 0 CODE 0 text55 dist/default/production\25014_Car_Black_Box.X.production.o
+read_log@j 2A 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__Linittext 0 0 ABS 0 inittext -
+__end_of_strncpy 2450 0 CODE 0 text7 dist/default/production\25014_Car_Black_Box.X.production.o
+_event_changed 61 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 18 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 18 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+___bmul FD2 0 CODE 0 text30 dist/default/production\25014_Car_Black_Box.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK2 0 0 ABS 0 cstackBANK2 -
+__size_of_view_log 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+menu@key 143 0 BANK2 1 cstackBANK2 dist/default/production\25014_Car_Black_Box.X.production.o
+menu@top 144 0 BANK2 1 cstackBANK2 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_bcd_to_ascii 37D8 0 CODE 0 text29 dist/default/production\25014_Car_Black_Box.X.production.o
+_GIE 5F 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_PEN 48A 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_PR2 92 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_RE1 49 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_RE2 4A 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_SEN 488 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__S0 2000 0 ABS 0 - -
+__S1 1E3 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr 3D8C 0 CODE 0 text56 dist/default/production\25014_Car_Black_Box.X.production.o
+_key 63 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_log A0 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+_pos 54 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_sec 65 0 BANK0 1 dataBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+password@screen_started 60 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+write_external_eeprom@data 74 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+write_external_eeprom@wait 76 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+read_external_eeprom@data 21 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+clcd_write@byte 76 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+clcd_write@mode 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+set_time@screen_started C0 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+set_time@digits B1 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+strcmp@s1 21 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+strcmp@s2 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+view_log@key 4D 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+___xxtofl 2E88 0 CODE 0 text38 dist/default/production\25014_Car_Black_Box.X.production.o
+strcpy@cp 76 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+strcpy@to 75 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_read_adc 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_read_log 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_isr 3E02 0 CODE 0 text56 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_display_time 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+___lldiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__stringtab 3000 0 STRING 0 strings dist/default/production\25014_Car_Black_Box.X.production.o
+_clear_clcd 368A 0 CODE 0 text52 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_get_time 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+strcmp@r 20 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\sathe\AppData\Local\Temp\s8q8.o
+__end_of_change_password 706 0 CODE 0 text44 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of___xxtofl 3000 0 CODE 0 text38 dist/default/production\25014_Car_Black_Box.X.production.o
+view_log@screen_started 5B 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+init_uart@baud 2D 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__pdataBANK0 65 0 BANK0 1 dataBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__pdataBANK1 DB 0 BANK1 1 dataBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+__pdataBANK2 145 0 BANK2 1 dataBANK2 dist/default/production\25014_Car_Black_Box.X.production.o
+__pdataBANK3 190 0 BANK3 1 dataBANK3 dist/default/production\25014_Car_Black_Box.X.production.o
+bcd_to_ascii@value 76 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of___bmul 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+download_log@download_started 78 0 COMMON 1 bssCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__end_of_clcd_print 3B76 0 CODE 0 text54 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_clcd_putch 37A2 0 CODE 0 text53 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_clcd_write 3D1E 0 CODE 0 text55 dist/default/production\25014_Car_Black_Box.X.production.o
+menu@menu_items 132 0 BANK2 1 cstackBANK2 dist/default/production\25014_Car_Black_Box.X.production.o
+___awmod@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_view_log 2D2E 0 CODE 0 text1 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_read_digital_keypad 3AB0 0 CODE 0 text4 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_init_clcd 3724 0 CODE 0 text18 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_init_uart 3D8C 0 CODE 0 text9 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_display_time 27C0 0 CODE 0 text37 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext10 3756 0 CODE 0 text10 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext11 2A44 0 CODE 0 text11 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext12 3B76 0 CODE 0 text12 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext13 27C0 0 CODE 0 text13 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext14 3E02 0 CODE 0 text14 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext15 37D8 0 CODE 0 text15 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext16 3848 0 CODE 0 text16 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext17 3670 0 CODE 0 text17 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext18 370E 0 CODE 0 text18 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext19 2962 0 CODE 0 text19 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext20 367C 0 CODE 0 text20 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext21 1624 0 CODE 0 text21 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext22 3950 0 CODE 0 text22 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext23 36CE 0 CODE 0 text23 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext24 2598 0 CODE 0 text24 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext25 3C48 0 CODE 0 text25 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext26 2890 0 CODE 0 text26 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext27 1376 0 CODE 0 text27 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext28 1028 0 CODE 0 text28 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext29 37A2 0 CODE 0 text29 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext30 FD2 0 CODE 0 text30 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext31 2640 0 CODE 0 text31 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext32 3884 0 CODE 0 text32 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext33 39F4 0 CODE 0 text33 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext34 3BDE 0 CODE 0 text34 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext35 36F8 0 CODE 0 text35 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext36 390A 0 CODE 0 text36 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext37 26F6 0 CODE 0 text37 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext38 2E88 0 CODE 0 text38 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext39 3E78 0 CODE 0 text39 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext40 3F74 0 CODE 0 text40 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext41 2B34 0 CODE 0 text41 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext42 1C46 0 CODE 0 text42 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext43 2450 0 CODE 0 text43 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext44 B8 0 CODE 0 text44 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext45 3AB0 0 CODE 0 text45 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext46 36E2 0 CODE 0 text46 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext47 36BC 0 CODE 0 text47 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext48 36AA 0 CODE 0 text48 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext49 373C 0 CODE 0 text49 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext50 380E 0 CODE 0 text50 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext51 399C 0 CODE 0 text51 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext52 368A 0 CODE 0 text52 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext53 3778 0 CODE 0 text53 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext54 3B10 0 CODE 0 text54 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext55 3CB2 0 CODE 0 text55 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext56 3D8C 0 CODE 0 text56 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_init_clcd 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_init_uart 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+___awdiv 2890 0 CODE 0 text26 dist/default/production\25014_Car_Black_Box.X.production.o
+___awmod 2640 0 CODE 0 text31 dist/default/production\25014_Car_Black_Box.X.production.o
+___fldiv 1C46 0 CODE 0 text42 dist/default/production\25014_Car_Black_Box.X.production.o
+___fltol 2B34 0 CODE 0 text41 dist/default/production\25014_Car_Black_Box.X.production.o
+___lldiv 27C0 0 CODE 0 text13 dist/default/production\25014_Car_Black_Box.X.production.o
+___lwdiv 3F74 0 CODE 0 text40 dist/default/production\25014_Car_Black_Box.X.production.o
+___lwmod 3E78 0 CODE 0 text39 dist/default/production\25014_Car_Black_Box.X.production.o
+__pmaintext 2C2C 0 CODE 0 maintext dist/default/production\25014_Car_Black_Box.X.production.o
+set_time@display_pos 3D 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_view_log 2E88 0 CODE 0 text1 dist/default/production\25014_Car_Black_Box.X.production.o
+init_i2c@baud 2D 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_store_event 11B8 0 CODE 0 text28 dist/default/production\25014_Car_Black_Box.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+change_password@stage 57 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_set_time 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+menu@redraw 142 0 BANK2 1 cstackBANK2 dist/default/production\25014_Car_Black_Box.X.production.o
+__Hinittext 0 0 ABS 0 inittext -
+___fldiv@grs 3E 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+___fldiv@rem 37 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+read_external_eeprom@address 20 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_clear_log 24F2 0 CODE 0 text43 dist/default/production\25014_Car_Black_Box.X.production.o
+change_password@confirm_password C1 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+set_time@key 49 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+___lwdiv@divisor 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+menu@menu_started 5D 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_init_clcd 370E 0 CODE 0 text18 dist/default/production\25014_Car_Black_Box.X.production.o
+_init_uart 3D1E 0 CODE 0 text9 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_password 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_strcmp 399C 0 CODE 0 text51 dist/default/production\25014_Car_Black_Box.X.production.o
+_strcpy 380E 0 CODE 0 text50 dist/default/production\25014_Car_Black_Box.X.production.o
+_read_adc 3884 0 CODE 0 text32 dist/default/production\25014_Car_Black_Box.X.production.o
+_read_log 2598 0 CODE 0 text24 dist/default/production\25014_Car_Black_Box.X.production.o
+___fldiv@new_exp 3C 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_clear_log 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_write_external_eeprom 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+uart_putc@data 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+init_ds1307@dummy 22 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_init_config 3F74 0 CODE 0 text8 dist/default/production\25014_Car_Black_Box.X.production.o
+_change_password B8 0 CODE 0 text44 dist/default/production\25014_Car_Black_Box.X.production.o
+_get_time 39F4 0 CODE 0 text33 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_init_ds1307 380E 0 CODE 0 text15 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_read_external_eeprom 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+write_ds1307@addr 75 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+write_ds1307@data 74 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+set_time@i 4A 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of__stringtab 3024 0 STRING 0 strings dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_clear_clcd 369A 0 CODE 0 text52 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_read_adc 38C6 0 CODE 0 text32 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_read_log 2640 0 CODE 0 text24 dist/default/production\25014_Car_Black_Box.X.production.o
+strcpy@from 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+password@key 2C 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__pbssCOMMON 78 0 COMMON 1 bssCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+init_fetch0 1002 0 CODE 0 inittext dist/default/production\25014_Car_Black_Box.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK2 0 0 ABS 0 cstackBANK2 -
+__end_of_get_time 3A52 0 CODE 0 text33 dist/default/production\25014_Car_Black_Box.X.production.o
+_clear_log 2450 0 CODE 0 text43 dist/default/production\25014_Car_Black_Box.X.production.o
+__Lend_init 18 0 CODE 0 end_init -
+_download_log 1624 0 CODE 0 text21 dist/default/production\25014_Car_Black_Box.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+___fltol@exp1 4E 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+end_of_initialization B0 0 CODE 0 cinit dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_read_external_eeprom 3CB2 0 CODE 0 text25 dist/default/production\25014_Car_Black_Box.X.production.o
+__Hintentry 18 0 CODE 0 intentry -
+_clock_reg D8 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+clcd_print@addr 22 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 22 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+isr@count B7 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+?___awdiv 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+?___awmod 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+i2c_write@data 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_display_log 1376 0 CODE 0 text2 dist/default/production\25014_Car_Black_Box.X.production.o
+___lwdiv@dividend 75 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+?___fldiv 2A 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+?___fltol 44 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+?___lldiv 20 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+?___lwdiv 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+?___lwmod 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+clcd_print@str 20 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+i2c_read@ack 74 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+_set_time 706 0 CODE 0 text3 dist/default/production\25014_Car_Black_Box.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+___awmod@dividend 75 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_strcmp 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_strcpy 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+write_external_eeprom@address 75 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+display_log@number 4A 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_uart_putc 36E2 0 CODE 0 text23 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_uart_puts 399C 0 CODE 0 text22 dist/default/production\25014_Car_Black_Box.X.production.o
+display_time@clock_reg 2E 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext1 2D2E 0 CODE 0 text1 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext2 11B8 0 CODE 0 text2 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext3 706 0 CODE 0 text3 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext4 3A52 0 CODE 0 text4 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext5 B9C 0 CODE 0 text5 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext6 1922 0 CODE 0 text6 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext7 23BC 0 CODE 0 text7 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext8 3EF0 0 CODE 0 text8 dist/default/production\25014_Car_Black_Box.X.production.o
+__ptext9 3D1E 0 CODE 0 text9 dist/default/production\25014_Car_Black_Box.X.production.o
+strncpy@from 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+strncpy@size 75 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_uart_putc 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_uart_puts 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_password B9C 0 CODE 0 text5 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_set_time B9C 0 CODE 0 text3 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_init_display_controller 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+dashboard@key 52 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+i2c_read@data 75 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+?___xxtofl 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+init_password@marker 23 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__size_of_init_digital_keypad 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__pstringtext 2000 0 STRCODE 0 stringtext dist/default/production\25014_Car_Black_Box.X.production.o
+___fltol@sign1 4D 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_password FD2 0 CODE 0 text5 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_download_log 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+set_time@F1094 DB 0 BANK1 1 dataBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+set_time@F1096 1CE 0 BANK3 1 dataBANK3 dist/default/production\25014_Car_Black_Box.X.production.o
+set_time@F1098 1C3 0 BANK3 1 dataBANK3 dist/default/production\25014_Car_Black_Box.X.production.o
+_strncpy 23BC 0 CODE 0 text7 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_read_ds1307 3C48 0 CODE 0 text34 dist/default/production\25014_Car_Black_Box.X.production.o
+_uart_putc 36CE 0 CODE 0 text23 dist/default/production\25014_Car_Black_Box.X.production.o
+_uart_puts 3950 0 CODE 0 text22 dist/default/production\25014_Car_Black_Box.X.production.o
+display_log@F1072 1B3 0 BANK3 1 dataBANK3 dist/default/production\25014_Car_Black_Box.X.production.o
+display_log@F1074 145 0 BANK2 1 dataBANK2 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_init_timer2 3778 0 CODE 0 text10 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_i2c_wait_for_idle 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+___fltol@f1 44 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+set_time@line1 27 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+set_time@line2 32 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+clcd_putch@addr 23 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+clcd_putch@data 24 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of__initialization B0 0 CODE 0 cinit dist/default/production\25014_Car_Black_Box.X.production.o
+display_log@index 49 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+display_log@line1 28 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+display_log@line2 38 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+___awmod@divisor 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 23B6 0 CODE 0 idataBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__pidataBANK1 3724 0 CODE 0 idataBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+__pidataBANK2 38C6 0 CODE 0 idataBANK2 dist/default/production\25014_Car_Black_Box.X.production.o
+__pidataBANK3 24F2 0 CODE 0 idataBANK3 dist/default/production\25014_Car_Black_Box.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_init_event_log 3E02 0 CODE 0 text14 dist/default/production\25014_Car_Black_Box.X.production.o
+bcd_to_ascii@buffer 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_change_password 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_download_log 1922 0 CODE 0 text21 dist/default/production\25014_Car_Black_Box.X.production.o
+___lldiv@quotient 28 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+_i2c_rep_start 36F8 0 CODE 0 text35 dist/default/production\25014_Car_Black_Box.X.production.o
+view_log@index 5A 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_T2CKPS0 90 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_T2CKPS1 91 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_clcd_print 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_clcd_putch 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_clcd_write 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_SSPCON2 91 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__Hend_init 1E 0 CODE 0 end_init -
+init_ram0 100A 0 CODE 0 inittext dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_store_event 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_init_digital_keypad 3670 0 CODE 0 text17 dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_main 2D2E 0 CODE 0 maintext dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_menu 1C46 0 CODE 0 text6 dist/default/production\25014_Car_Black_Box.X.production.o
+_ACKDT 48D 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_ACKEN 48C 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+set_time@blink_state 58 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_i2c_read 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_i2c_stop 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_RCSTA 18 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_SPBRG 99 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_SSPEN A5 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_SSPM3 A3 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_TXREG 19 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_TXSTA 98 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+?_read_adc 73 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_allow 62 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+interrupt_function 8 0 CODE 0 intentry dist/default/production\25014_Car_Black_Box.X.production.o
+_event 190 0 BANK3 1 dataBANK3 dist/default/production\25014_Car_Black_Box.X.production.o
+_nDONE FA 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+_speed D5 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_isr 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+password@i 5F 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__HdataBANK2 0 0 ABS 0 dataBANK2 -
+__HdataBANK3 0 0 ABS 0 dataBANK3 -
+uart_puts@s 74 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_init_config 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+__initialization 1E 0 CODE 0 cinit dist/default/production\25014_Car_Black_Box.X.production.o
+___bmul@product 75 0 COMMON 1 cstackCOMMON dist/default/production\25014_Car_Black_Box.X.production.o
+__size_of_init_ds1307 0 0 ABS 0 - dist/default/production\25014_Car_Black_Box.X.production.o
+___xxtofl@sign 24 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__pbssBANK0 54 0 BANK0 1 bssBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\25014_Car_Black_Box.X.production.o
+__Hstringtext 0 0 ABS 0 stringtext -
+__pstrings 3000 0 STRING 0 strings dist/default/production\25014_Car_Black_Box.X.production.o
+__end_of_init_event_log 3E78 0 CODE 0 text14 dist/default/production\25014_Car_Black_Box.X.production.o
+init_password@i 24 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+store_event@i 36 0 BANK0 1 cstackBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+_init_password 2A44 0 CODE 0 text11 dist/default/production\25014_Car_Black_Box.X.production.o
+password@attempts 67 0 BANK0 1 dataBANK0 dist/default/production\25014_Car_Black_Box.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 1697 2D2E AD 2
+text2 0 8DC 11B8 DF 2
+text4 0 1D29 3A52 2F 2
+text6 0 C91 1922 192 2
+text7 0 11DE 23BC 4A 2
+text8 0 1F78 3EF0 42 2
+text9 0 1E8F 3D1E 37 2
+text10 0 1BAB 3756 11 2
+text11 0 1522 2A44 78 2
+text12 0 1DBB 3B76 34 2
+text13 0 13E0 27C0 68 2
+text14 0 1F01 3E02 3B 2
+text15 0 1BEC 37D8 1B 2
+text16 0 1C24 3848 1E 2
+text17 0 1B38 3670 6 2
+text18 0 1B87 370E B 2
+text19 0 14B1 2962 71 2
+text20 0 1B3E 367C 7 2
+text21 0 B12 1624 17F 2
+text22 0 1CA8 3950 26 2
+text23 0 1B67 36CE A 2
+text24 0 12CC 2598 54 2
+text25 0 1E24 3C48 35 2
+text26 0 1448 2890 69 2
+text27 0 9BB 1376 157 2
+text28 0 814 1028 C8 2
+text29 0 1BD1 37A2 1B 2
+text31 0 1320 2640 5B 2
+text32 0 1C42 3884 21 2
+text33 0 1CFA 39F4 2F 2
+text34 0 1DEF 3BDE 35 2
+text35 0 1B7C 36F8 B 2
+text36 0 1C85 390A 23 2
+text37 0 137B 26F6 65 2
+text38 0 1744 2E88 BC 2
+text39 0 1F3C 3E78 3C 2
+text40 0 1FBA 3F74 46 2
+text41 0 159A 2B34 7C 2
+text42 0 E23 1C46 1DD 2
+text43 0 1228 2450 51 2
+text45 0 1D58 3AB0 30 2
+text46 0 1B71 36E2 B 2
+text47 0 1B5E 36BC 9 2
+text48 0 1B55 36AA 9 2
+text49 0 1B9E 373C D 2
+text50 0 1C07 380E 1D 2
+text51 0 1CCE 399C 2C 2
+text52 0 1B45 368A 8 2
+text53 0 1BBC 3778 15 2
+text54 0 1D88 3B10 33 2
+text55 0 1E59 3CB2 36 2
+text56 0 1EC6 3D8C 3B 2
+maintext 0 1616 2C2C 81 2
+cstackCOMMON 1 70 70 B 1
+cstackBANK0 1 20 20 48 1
+cstackBANK2 1 110 110 57 1
+inittext 0 801 1002 13 2
+intentry 0 4 8 7FA 2
+reset_vec 0 0 0 3 2
+bssBANK1 1 A0 A0 47 1
+stringtext 0 1000 2000 1DB 2
+idataBANK0 0 11DB 23B6 3 2
+idataBANK1 0 1B92 3724 C 2
+idataBANK2 0 1C63 38C6 22 2
+idataBANK3 0 1279 24F2 53 2
+strings 0 1800 3000 12 2
+dataBANK3 1 190 190 53 1
+clrtext 0 1B4D 369A 8 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
